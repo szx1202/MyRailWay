@@ -1,0 +1,3025 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/xml/XSLT/panelfile-4-19-2.xsl" type="text/xsl"?>
+<layout-config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://jmri.org/xml/schema/layout-4-19-2.xsd">
+  <jmriversion>
+    <major>5</major>
+    <minor>2</minor>
+    <test>0</test>
+    <modifier />
+  </jmriversion>
+  <sensors class="jmri.jmrix.cmri.serial.configurexml.SerialSensorManagerXml">
+    <sensor inverted="false">
+      <systemName>CS1001</systemName>
+      <userName>S-T04-L</userName>
+    </sensor>
+    <sensor inverted="false">
+      <systemName>CS1002</systemName>
+      <userName>S-T04-R</userName>
+    </sensor>
+    <sensor inverted="false">
+      <systemName>CS1003</systemName>
+      <userName>S-T04-S</userName>
+    </sensor>
+    <sensor inverted="false">
+      <systemName>CS1004</systemName>
+      <userName>S-T02-L</userName>
+    </sensor>
+    <sensor inverted="false">
+      <systemName>CS1005</systemName>
+      <userName>S-T02-R</userName>
+    </sensor>
+    <sensor inverted="false">
+      <systemName>CS1007</systemName>
+      <userName>S-T03-L</userName>
+    </sensor>
+    <sensor inverted="false">
+      <systemName>CS1008</systemName>
+      <userName>S-T03-R</userName>
+    </sensor>
+    <sensor inverted="false">
+      <systemName>CS1009</systemName>
+      <userName>S-T05-L</userName>
+    </sensor>
+    <sensor inverted="false">
+      <systemName>CS1010</systemName>
+      <userName>S-T05-R</userName>
+    </sensor>
+    <sensor inverted="false">
+      <systemName>CS1011</systemName>
+      <userName>S-T05-S</userName>
+    </sensor>
+    <sensor inverted="false">
+      <systemName>CS1012</systemName>
+      <userName>S-T13-L</userName>
+    </sensor>
+    <sensor inverted="false">
+      <systemName>CS1013</systemName>
+      <userName>S-T13-R</userName>
+    </sensor>
+    <sensor inverted="false">
+      <systemName>CS1014</systemName>
+      <userName>S-T13-S</userName>
+    </sensor>
+    <sensor inverted="false">
+      <systemName>CS1015</systemName>
+      <userName>S-T22-L</userName>
+    </sensor>
+    <sensor inverted="false">
+      <systemName>CS1016</systemName>
+      <userName>S-T22-R</userName>
+    </sensor>
+    <sensor inverted="false">
+      <systemName>CS1017</systemName>
+      <userName>S-T12-R</userName>
+    </sensor>
+    <sensor inverted="false">
+      <systemName>CS1018</systemName>
+      <userName>S-T12-L</userName>
+    </sensor>
+    <sensor inverted="false">
+      <systemName>CS1019</systemName>
+      <userName>S-T14-L</userName>
+    </sensor>
+    <sensor inverted="false">
+      <systemName>CS1020</systemName>
+      <userName>S-T14-R</userName>
+    </sensor>
+    <sensor inverted="false">
+      <systemName>CS1021</systemName>
+      <userName>S-T14-S</userName>
+    </sensor>
+    <sensor inverted="false">
+      <systemName>CS1022</systemName>
+      <userName>S-T11-L</userName>
+    </sensor>
+    <sensor inverted="false">
+      <systemName>CS1023</systemName>
+      <userName>S-T11-R</userName>
+    </sensor>
+    <sensor inverted="false">
+      <systemName>CS1024</systemName>
+      <userName>S-T01-L</userName>
+    </sensor>
+    <sensor inverted="false">
+      <systemName>CS1025</systemName>
+      <userName>S-T01-R</userName>
+    </sensor>
+    <sensor inverted="false">
+      <systemName>CS1026</systemName>
+      <userName>S-T09-L</userName>
+    </sensor>
+    <sensor inverted="false">
+      <systemName>CS1027</systemName>
+      <userName>S-T09-R</userName>
+    </sensor>
+    <sensor inverted="false">
+      <systemName>CS1028</systemName>
+      <userName>S-T09-S</userName>
+    </sensor>
+  </sensors>
+  <sensors class="jmri.jmrix.internal.configurexml.InternalSensorManagerXml">
+    <defaultInitialState>unknown</defaultInitialState>
+    <sensor inverted="false">
+      <systemName>ISCLOCKRUNNING</systemName>
+    </sensor>
+  </sensors>
+  <turnouts class="jmri.jmrix.cmri.serial.configurexml.SerialTurnoutManagerXml">
+    <operations automate="false">
+      <operation name="NoFeedback" class="jmri.configurexml.turnoutoperations.NoFeedbackTurnoutOperationXml" interval="300" maxtries="2" />
+      <operation name="Raw" class="jmri.configurexml.turnoutoperations.RawTurnoutOperationXml" interval="300" maxtries="1" />
+      <operation name="Sensor" class="jmri.configurexml.turnoutoperations.SensorTurnoutOperationXml" interval="300" maxtries="3" />
+    </operations>
+    <defaultclosedspeed>Normal</defaultclosedspeed>
+    <defaultthrownspeed>Restricted</defaultthrownspeed>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT101</systemName>
+      <comment>SignalHead:SH1:Green:Red</comment>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT102</systemName>
+      <comment>SignalHead:SH2:Red:Green</comment>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT103</systemName>
+      <comment>SignalHead:SH3:Green:Red</comment>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT104</systemName>
+      <comment>SignalHead:SH5:Green:Red</comment>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT105</systemName>
+      <comment>SignalHead:SH6:Red:Green</comment>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT106</systemName>
+      <comment>SignalHead:SH7:Green:Red</comment>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT108</systemName>
+      <comment>SignalHead:SH8:Green:Red</comment>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT109</systemName>
+      <comment>SignalHead:SH9:Green:Red</comment>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT110</systemName>
+      <comment>SignalHead:SH10:Red:Green</comment>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT111</systemName>
+      <comment>SignalHead:SH11:Green:Red</comment>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT112</systemName>
+      <comment>SignalHead:SH12:Red:Green</comment>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT113</systemName>
+      <comment>SignalHead:SH13:Green:Red</comment>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT114</systemName>
+      <comment>SignalHead:SH15:Green:Red</comment>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT115</systemName>
+      <comment>SignalHead:SH16:Red:Green</comment>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT1001</systemName>
+      <userName>CT01</userName>
+      <comment>Turn together with CT11</comment>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT1002</systemName>
+      <userName>CT02</userName>
+      <comment>Turn together with CT03</comment>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT1003</systemName>
+      <userName>CT03</userName>
+      <comment>Turn Togetheer with CT02</comment>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT1004</systemName>
+      <userName>CT04</userName>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT1005</systemName>
+      <userName>CT05</userName>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT1006</systemName>
+      <userName>CT06</userName>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT1007</systemName>
+      <userName>CT07</userName>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT1008</systemName>
+      <userName>CT08</userName>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="true" automate="Off">
+      <systemName>CT1009</systemName>
+      <userName>CT09</userName>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT1010</systemName>
+      <userName>CT10</userName>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT1011</systemName>
+      <userName>CT11</userName>
+      <comment>Turn together with CT01</comment>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT1012</systemName>
+      <userName>CT12</userName>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="true" automate="Off">
+      <systemName>CT1013</systemName>
+      <userName>CT13</userName>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT1014</systemName>
+      <userName>CT14</userName>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT1015</systemName>
+      <userName>CT15</userName>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT1022</systemName>
+      <userName>CT22</userName>
+    </turnout>
+    <turnout feedback="DIRECT" inverted="false" automate="Off">
+      <systemName>CT1023</systemName>
+      <userName>CT23</userName>
+    </turnout>
+  </turnouts>
+  <memories class="jmri.managers.configurexml.DefaultMemoryManagerXml">
+    <memory value="11:00 PM">
+      <systemName>IMCURRENTTIME</systemName>
+    </memory>
+    <memory value="1.0">
+      <systemName>IMRATEFACTOR</systemName>
+    </memory>
+  </memories>
+  <signalheads class="jmri.managers.configurexml.AbstractSignalHeadManagerXml">
+    <signalhead class="jmri.implementation.configurexml.SingleTurnoutSignalHeadXml">
+      <systemName>SH1</systemName>
+      <userName>SH1-T04--R</userName>
+      <appearance defines="thrown">green</appearance>
+      <appearance defines="closed">red</appearance>
+      <turnoutname defines="aspect">CT101</turnoutname>
+    </signalhead>
+    <signalhead class="jmri.implementation.configurexml.SingleTurnoutSignalHeadXml">
+      <systemName>SH2</systemName>
+      <userName>SH1-T04--S</userName>
+      <appearance defines="thrown">red</appearance>
+      <appearance defines="closed">green</appearance>
+      <turnoutname defines="aspect">CT102</turnoutname>
+    </signalhead>
+    <signalhead class="jmri.implementation.configurexml.SingleTurnoutSignalHeadXml">
+      <systemName>SH3</systemName>
+      <userName>SH3-T02-R</userName>
+      <appearance defines="thrown">green</appearance>
+      <appearance defines="closed">red</appearance>
+      <turnoutname defines="aspect">CT103</turnoutname>
+    </signalhead>
+    <signalhead class="jmri.implementation.configurexml.SingleTurnoutSignalHeadXml">
+      <systemName>SH4</systemName>
+      <userName>SH4-T03-L</userName>
+      <appearance defines="thrown">green</appearance>
+      <appearance defines="closed">red</appearance>
+      <turnoutname defines="aspect">CT103</turnoutname>
+    </signalhead>
+    <signalhead class="jmri.implementation.configurexml.SingleTurnoutSignalHeadXml">
+      <systemName>SH5</systemName>
+      <userName>SH5-T05-R</userName>
+      <appearance defines="thrown">green</appearance>
+      <appearance defines="closed">red</appearance>
+      <turnoutname defines="aspect">CT104</turnoutname>
+    </signalhead>
+    <signalhead class="jmri.implementation.configurexml.SingleTurnoutSignalHeadXml">
+      <systemName>SH6</systemName>
+      <userName>SH5-T05-S</userName>
+      <appearance defines="thrown">red</appearance>
+      <appearance defines="closed">green</appearance>
+      <turnoutname defines="aspect">CT105</turnoutname>
+    </signalhead>
+    <signalhead class="jmri.implementation.configurexml.SingleTurnoutSignalHeadXml">
+      <systemName>SH7</systemName>
+      <userName>SH7-T13-R</userName>
+      <appearance defines="thrown">green</appearance>
+      <appearance defines="closed">red</appearance>
+      <turnoutname defines="aspect">CT106</turnoutname>
+    </signalhead>
+    <signalhead class="jmri.implementation.configurexml.SingleTurnoutSignalHeadXml">
+      <systemName>SH8</systemName>
+      <userName>SH8-T13-S</userName>
+      <appearance defines="thrown">green</appearance>
+      <appearance defines="closed">red</appearance>
+      <turnoutname defines="aspect">CT108</turnoutname>
+    </signalhead>
+    <signalhead class="jmri.implementation.configurexml.SingleTurnoutSignalHeadXml">
+      <systemName>SH9</systemName>
+      <userName>SH9-T22-R</userName>
+      <appearance defines="thrown">green</appearance>
+      <appearance defines="closed">red</appearance>
+      <turnoutname defines="aspect">CT109</turnoutname>
+    </signalhead>
+    <signalhead class="jmri.implementation.configurexml.SingleTurnoutSignalHeadXml">
+      <systemName>SH10</systemName>
+      <userName>SH10-T12-L</userName>
+      <appearance defines="thrown">red</appearance>
+      <appearance defines="closed">green</appearance>
+      <turnoutname defines="aspect">CT110</turnoutname>
+    </signalhead>
+    <signalhead class="jmri.implementation.configurexml.SingleTurnoutSignalHeadXml">
+      <systemName>SH11</systemName>
+      <userName>SH11-T14-R</userName>
+      <appearance defines="thrown">green</appearance>
+      <appearance defines="closed">red</appearance>
+      <turnoutname defines="aspect">CT111</turnoutname>
+    </signalhead>
+    <signalhead class="jmri.implementation.configurexml.SingleTurnoutSignalHeadXml">
+      <systemName>SH12</systemName>
+      <userName>SH12-T14-S</userName>
+      <appearance defines="thrown">red</appearance>
+      <appearance defines="closed">green</appearance>
+      <turnoutname defines="aspect">CT112</turnoutname>
+    </signalhead>
+    <signalhead class="jmri.implementation.configurexml.SingleTurnoutSignalHeadXml">
+      <systemName>SH13</systemName>
+      <userName>SH13-T11-L</userName>
+      <appearance defines="thrown">green</appearance>
+      <appearance defines="closed">red</appearance>
+      <turnoutname defines="aspect">CT113</turnoutname>
+    </signalhead>
+    <signalhead class="jmri.implementation.configurexml.SingleTurnoutSignalHeadXml">
+      <systemName>SH14</systemName>
+      <userName>SH14-T01-R</userName>
+      <appearance defines="thrown">green</appearance>
+      <appearance defines="closed">red</appearance>
+      <turnoutname defines="aspect">CT113</turnoutname>
+    </signalhead>
+    <signalhead class="jmri.implementation.configurexml.SingleTurnoutSignalHeadXml">
+      <systemName>SH15</systemName>
+      <userName>SH15-T09-L</userName>
+      <appearance defines="thrown">green</appearance>
+      <appearance defines="closed">red</appearance>
+      <turnoutname defines="aspect">CT114</turnoutname>
+    </signalhead>
+    <signalhead class="jmri.implementation.configurexml.SingleTurnoutSignalHeadXml">
+      <systemName>SH16</systemName>
+      <userName>SH16-T09-S</userName>
+      <appearance defines="thrown">red</appearance>
+      <appearance defines="closed">green</appearance>
+      <turnoutname defines="aspect">CT115</turnoutname>
+    </signalhead>
+    <signalhead class="jmri.implementation.configurexml.VirtualSignalHeadXml">
+      <systemName>SHV3</systemName>
+      <userName>SHV1-T04-L1</userName>
+    </signalhead>
+    <signalhead class="jmri.implementation.configurexml.VirtualSignalHeadXml">
+      <systemName>SHV4</systemName>
+      <userName>SHV1-T04--L2</userName>
+    </signalhead>
+    <signalhead class="jmri.implementation.configurexml.VirtualSignalHeadXml">
+      <systemName>SHV5</systemName>
+      <userName>SHV5-T03-R1</userName>
+    </signalhead>
+    <signalhead class="jmri.implementation.configurexml.VirtualSignalHeadXml">
+      <systemName>SHV6</systemName>
+      <userName>SHV6-T03-R2</userName>
+    </signalhead>
+    <signalhead class="jmri.implementation.configurexml.VirtualSignalHeadXml">
+      <systemName>SHV7</systemName>
+      <userName>SHV7-T02-L1</userName>
+    </signalhead>
+    <signalhead class="jmri.implementation.configurexml.VirtualSignalHeadXml">
+      <systemName>SHV8</systemName>
+      <userName>SHV8-T02-L2</userName>
+    </signalhead>
+    <signalhead class="jmri.implementation.configurexml.VirtualSignalHeadXml">
+      <systemName>SHV9</systemName>
+      <userName>SVH9-T05-L1</userName>
+    </signalhead>
+    <signalhead class="jmri.implementation.configurexml.VirtualSignalHeadXml">
+      <systemName>SHV10</systemName>
+      <userName>SVH10-T05-L2</userName>
+    </signalhead>
+    <signalhead class="jmri.implementation.configurexml.VirtualSignalHeadXml">
+      <systemName>SHV11</systemName>
+      <userName>SVH13-T13-L1</userName>
+    </signalhead>
+    <signalhead class="jmri.implementation.configurexml.VirtualSignalHeadXml">
+      <systemName>SHV12</systemName>
+      <userName>SVH13-T13-L2</userName>
+    </signalhead>
+    <signalhead class="jmri.implementation.configurexml.VirtualSignalHeadXml">
+      <systemName>SHV13</systemName>
+      <userName>SHV13-T22-L1</userName>
+    </signalhead>
+    <signalhead class="jmri.implementation.configurexml.VirtualSignalHeadXml">
+      <systemName>SHV14</systemName>
+      <userName>SHV14-T22-L2</userName>
+    </signalhead>
+    <signalhead class="jmri.implementation.configurexml.VirtualSignalHeadXml">
+      <systemName>SHV15</systemName>
+      <userName>SHV15-T12-R1</userName>
+    </signalhead>
+    <signalhead class="jmri.implementation.configurexml.VirtualSignalHeadXml">
+      <systemName>SHV16</systemName>
+      <userName>SHV16-T12-R2</userName>
+    </signalhead>
+    <signalhead class="jmri.implementation.configurexml.VirtualSignalHeadXml">
+      <systemName>SHV17</systemName>
+      <userName>SHV17-T14-L1</userName>
+    </signalhead>
+    <signalhead class="jmri.implementation.configurexml.VirtualSignalHeadXml">
+      <systemName>SHV18</systemName>
+      <userName>SHV17-T14-L2</userName>
+    </signalhead>
+    <signalhead class="jmri.implementation.configurexml.VirtualSignalHeadXml">
+      <systemName>SHV19</systemName>
+      <userName>SHV19-T11-R1</userName>
+    </signalhead>
+    <signalhead class="jmri.implementation.configurexml.VirtualSignalHeadXml">
+      <systemName>SHV20</systemName>
+      <userName>SHV20-T11-R2</userName>
+    </signalhead>
+    <signalhead class="jmri.implementation.configurexml.VirtualSignalHeadXml">
+      <systemName>SHV21</systemName>
+      <userName>SHV21-T01-L1</userName>
+    </signalhead>
+    <signalhead class="jmri.implementation.configurexml.VirtualSignalHeadXml">
+      <systemName>SHV22</systemName>
+      <userName>SHV22-T01-L2</userName>
+    </signalhead>
+    <signalhead class="jmri.implementation.configurexml.VirtualSignalHeadXml">
+      <systemName>SHV23</systemName>
+      <userName>SHV23-T09-R1</userName>
+    </signalhead>
+    <signalhead class="jmri.implementation.configurexml.VirtualSignalHeadXml">
+      <systemName>SHV24</systemName>
+      <userName>SHV24-T09-R2</userName>
+    </signalhead>
+  </signalheads>
+  <blocks class="jmri.configurexml.BlockManagerXml">
+    <defaultspeed>Normal</defaultspeed>
+    <block systemName="IB1">
+      <systemName>IB1</systemName>
+      <userName>TB15</userName>
+    </block>
+    <block systemName="IB2">
+      <systemName>IB2</systemName>
+      <userName>TB22</userName>
+    </block>
+    <block systemName="IB3">
+      <systemName>IB3</systemName>
+      <userName>BC10</userName>
+    </block>
+    <block systemName="IB4">
+      <systemName>IB4</systemName>
+      <userName>BC15</userName>
+    </block>
+    <block systemName="IB5">
+      <systemName>IB5</systemName>
+      <userName>TB05</userName>
+    </block>
+    <block systemName="IB:AUTO:0042">
+      <systemName>IB:AUTO:0042</systemName>
+      <userName>B-T02-L</userName>
+    </block>
+    <block systemName="IB:AUTO:0043">
+      <systemName>IB:AUTO:0043</systemName>
+      <userName>B-T02-R</userName>
+    </block>
+    <block systemName="IB:AUTO:0044">
+      <systemName>IB:AUTO:0044</systemName>
+      <userName>B-T03-L</userName>
+    </block>
+    <block systemName="IB:AUTO:0045">
+      <systemName>IB:AUTO:0045</systemName>
+      <userName>B-T03-R</userName>
+    </block>
+    <block systemName="IB:AUTO:0046">
+      <systemName>IB:AUTO:0046</systemName>
+      <userName>B-T04-L</userName>
+    </block>
+    <block systemName="IB:AUTO:0047">
+      <systemName>IB:AUTO:0047</systemName>
+      <userName>B-T04-R</userName>
+    </block>
+    <block systemName="IB:AUTO:0048">
+      <systemName>IB:AUTO:0048</systemName>
+      <userName>B-T04-S</userName>
+    </block>
+    <block systemName="IB:AUTO:0049">
+      <systemName>IB:AUTO:0049</systemName>
+      <userName>B-T05-L</userName>
+    </block>
+    <block systemName="IB:AUTO:0050">
+      <systemName>IB:AUTO:0050</systemName>
+      <userName>B-T05-R</userName>
+    </block>
+    <block systemName="IB:AUTO:0051">
+      <systemName>IB:AUTO:0051</systemName>
+      <userName>B-T05-S</userName>
+    </block>
+    <block systemName="IB:AUTO:0052">
+      <systemName>IB:AUTO:0052</systemName>
+      <userName>BS-T06-S</userName>
+    </block>
+    <block systemName="IB:AUTO:0053">
+      <systemName>IB:AUTO:0053</systemName>
+      <userName>BS-T08-S</userName>
+    </block>
+    <block systemName="IB:AUTO:0054">
+      <systemName>IB:AUTO:0054</systemName>
+      <userName>BS-T07-S</userName>
+    </block>
+    <block systemName="IB:AUTO:0055">
+      <systemName>IB:AUTO:0055</systemName>
+      <userName>BS-T08-L</userName>
+    </block>
+    <block systemName="IB:AUTO:0056">
+      <systemName>IB:AUTO:0056</systemName>
+      <userName>BS-T10-S</userName>
+    </block>
+    <block systemName="IB:AUTO:0057">
+      <systemName>IB:AUTO:0057</systemName>
+      <userName>BS-T23-L</userName>
+    </block>
+    <block systemName="IB:AUTO:0058">
+      <systemName>IB:AUTO:0058</systemName>
+      <userName>BS-T23-S</userName>
+    </block>
+    <block systemName="IB:AUTO:0059">
+      <systemName>IB:AUTO:0059</systemName>
+      <userName>BS-T22-R</userName>
+    </block>
+    <block systemName="IB:AUTO:0060">
+      <systemName>IB:AUTO:0060</systemName>
+      <userName>BS-T15-R</userName>
+    </block>
+    <block systemName="IB:AUTO:0066">
+      <systemName>IB:AUTO:0066</systemName>
+      <userName>B-T13-L</userName>
+    </block>
+    <block systemName="IB:AUTO:0067">
+      <systemName>IB:AUTO:0067</systemName>
+      <userName>B-T13-R</userName>
+    </block>
+    <block systemName="IB:AUTO:0068">
+      <systemName>IB:AUTO:0068</systemName>
+      <userName>B-T13-S</userName>
+    </block>
+    <block systemName="IB:AUTO:0069">
+      <systemName>IB:AUTO:0069</systemName>
+      <userName>B-T22-L</userName>
+    </block>
+    <block systemName="IB:AUTO:0070">
+      <systemName>IB:AUTO:0070</systemName>
+      <userName>B-T22-R</userName>
+    </block>
+    <block systemName="IB:AUTO:0071">
+      <systemName>IB:AUTO:0071</systemName>
+      <userName>B-T12-L</userName>
+    </block>
+    <block systemName="IB:AUTO:0072">
+      <systemName>IB:AUTO:0072</systemName>
+      <userName>B-T12-R</userName>
+    </block>
+    <block systemName="IB:AUTO:0073">
+      <systemName>IB:AUTO:0073</systemName>
+      <userName>B-T14-L</userName>
+    </block>
+    <block systemName="IB:AUTO:0074">
+      <systemName>IB:AUTO:0074</systemName>
+      <userName>B-T14-R</userName>
+    </block>
+    <block systemName="IB:AUTO:0075">
+      <systemName>IB:AUTO:0075</systemName>
+      <userName>B-T14-S</userName>
+    </block>
+    <block systemName="IB:AUTO:0076">
+      <systemName>IB:AUTO:0076</systemName>
+      <userName>B-T11-L</userName>
+    </block>
+    <block systemName="IB:AUTO:0077">
+      <systemName>IB:AUTO:0077</systemName>
+      <userName>B-T11-R</userName>
+    </block>
+    <block systemName="IB:AUTO:0078">
+      <systemName>IB:AUTO:0078</systemName>
+      <userName>B-T01-R</userName>
+    </block>
+    <block systemName="IB:AUTO:0079">
+      <systemName>IB:AUTO:0079</systemName>
+      <userName>B-T01-L</userName>
+    </block>
+    <block systemName="IB:AUTO:0080">
+      <systemName>IB:AUTO:0080</systemName>
+      <userName>B-T09-R</userName>
+    </block>
+    <block systemName="IB:AUTO:0081">
+      <systemName>IB:AUTO:0081</systemName>
+      <userName>B-T09-L</userName>
+    </block>
+    <block systemName="IB:AUTO:0082">
+      <systemName>IB:AUTO:0082</systemName>
+      <userName>B-T09-S</userName>
+    </block>
+    <block systemName="IB1" length="0.0" curve="0">
+      <systemName>IB1</systemName>
+      <userName>TB15</userName>
+      <permissive>no</permissive>
+    </block>
+    <block systemName="IB2" length="0.0" curve="0">
+      <systemName>IB2</systemName>
+      <userName>TB22</userName>
+      <permissive>no</permissive>
+    </block>
+    <block systemName="IB3" length="0.0" curve="0">
+      <systemName>IB3</systemName>
+      <userName>BC10</userName>
+      <permissive>no</permissive>
+    </block>
+    <block systemName="IB4" length="0.0" curve="0">
+      <systemName>IB4</systemName>
+      <userName>BC15</userName>
+      <permissive>no</permissive>
+    </block>
+    <block systemName="IB5" length="0.0" curve="0">
+      <systemName>IB5</systemName>
+      <userName>TB05</userName>
+      <permissive>no</permissive>
+    </block>
+    <block systemName="IB:AUTO:0042" length="0.0" curve="0">
+      <systemName>IB:AUTO:0042</systemName>
+      <userName>B-T02-L</userName>
+      <permissive>no</permissive>
+      <occupancysensor>CS1004</occupancysensor>
+      <path todir="64" fromdir="128" block="IB:AUTO:0043">
+        <beansetting setting="2">
+          <turnout systemName="CT02" />
+        </beansetting>
+      </path>
+      <path todir="96" fromdir="144" block="IB:AUTO:0045">
+        <beansetting setting="4">
+          <turnout systemName="CT02" />
+        </beansetting>
+      </path>
+    </block>
+    <block systemName="IB:AUTO:0043" length="0.0" curve="0">
+      <systemName>IB:AUTO:0043</systemName>
+      <userName>B-T02-R</userName>
+      <permissive>no</permissive>
+      <occupancysensor>S-T02-R</occupancysensor>
+      <path todir="128" fromdir="64" block="IB:AUTO:0042">
+        <beansetting setting="2">
+          <turnout systemName="CT02" />
+        </beansetting>
+        <beansetting setting="2">
+          <turnout systemName="CT02" />
+        </beansetting>
+      </path>
+    </block>
+    <block systemName="IB:AUTO:0044" length="0.0" curve="0">
+      <systemName>IB:AUTO:0044</systemName>
+      <userName>B-T03-L</userName>
+      <permissive>no</permissive>
+      <occupancysensor>S-T03-L</occupancysensor>
+      <path todir="64" fromdir="128" block="IB:AUTO:0045">
+        <beansetting setting="2">
+          <turnout systemName="CT02" />
+        </beansetting>
+      </path>
+      <path todir="128" fromdir="64" block="IB:AUTO:0047" />
+    </block>
+    <block systemName="IB:AUTO:0045" length="0.0" curve="0">
+      <systemName>IB:AUTO:0045</systemName>
+      <userName>B-T03-R</userName>
+      <permissive>no</permissive>
+      <occupancysensor>S-T03-R</occupancysensor>
+      <path todir="144" fromdir="96" block="IB:AUTO:0042">
+        <beansetting setting="4">
+          <turnout systemName="CT02" />
+        </beansetting>
+      </path>
+      <path todir="128" fromdir="64" block="IB:AUTO:0044">
+        <beansetting setting="2">
+          <turnout systemName="CT02" />
+        </beansetting>
+      </path>
+    </block>
+    <block systemName="IB:AUTO:0046" length="0.0" curve="0">
+      <systemName>IB:AUTO:0046</systemName>
+      <userName>B-T04-L</userName>
+      <permissive>no</permissive>
+      <occupancysensor>S-T04-L</occupancysensor>
+      <path todir="64" fromdir="128" block="IB:AUTO:0047">
+        <beansetting setting="2">
+          <turnout systemName="CT04" />
+        </beansetting>
+      </path>
+      <path todir="64" fromdir="128" block="IB:AUTO:0048">
+        <beansetting setting="4">
+          <turnout systemName="CT04" />
+        </beansetting>
+      </path>
+    </block>
+    <block systemName="IB:AUTO:0047" length="0.0" curve="0">
+      <systemName>IB:AUTO:0047</systemName>
+      <userName>B-T04-R</userName>
+      <permissive>no</permissive>
+      <occupancysensor>S-T04-R</occupancysensor>
+      <path todir="64" fromdir="128" block="IB:AUTO:0044" />
+      <path todir="128" fromdir="64" block="IB:AUTO:0046">
+        <beansetting setting="2">
+          <turnout systemName="CT04" />
+        </beansetting>
+      </path>
+    </block>
+    <block systemName="IB:AUTO:0048" length="0.0" curve="0">
+      <systemName>IB:AUTO:0048</systemName>
+      <userName>B-T04-S</userName>
+      <permissive>no</permissive>
+      <occupancysensor>S-T04-S</occupancysensor>
+      <path todir="128" fromdir="64" block="IB:AUTO:0046">
+        <beansetting setting="4">
+          <turnout systemName="CT04" />
+        </beansetting>
+      </path>
+    </block>
+    <block systemName="IB:AUTO:0049" length="0.0" curve="0">
+      <systemName>IB:AUTO:0049</systemName>
+      <userName>B-T05-L</userName>
+      <permissive>no</permissive>
+      <occupancysensor>S-T05-L</occupancysensor>
+      <path todir="160" fromdir="80" block="IB:AUTO:0050">
+        <beansetting setting="2">
+          <turnout systemName="CT05" />
+        </beansetting>
+      </path>
+      <path todir="128" fromdir="64" block="IB:AUTO:0051">
+        <beansetting setting="4">
+          <turnout systemName="CT05" />
+        </beansetting>
+      </path>
+    </block>
+    <block systemName="IB:AUTO:0050" length="0.0" curve="0">
+      <systemName>IB:AUTO:0050</systemName>
+      <userName>B-T05-R</userName>
+      <permissive>no</permissive>
+      <occupancysensor>S-T05-R</occupancysensor>
+      <path todir="80" fromdir="160" block="IB:AUTO:0049">
+        <beansetting setting="2">
+          <turnout systemName="CT05" />
+        </beansetting>
+      </path>
+    </block>
+    <block systemName="IB:AUTO:0051" length="0.0" curve="0">
+      <systemName>IB:AUTO:0051</systemName>
+      <userName>B-T05-S</userName>
+      <permissive>no</permissive>
+      <occupancysensor>S-T05-S</occupancysensor>
+      <path todir="64" fromdir="128" block="IB:AUTO:0049">
+        <beansetting setting="4">
+          <turnout systemName="CT05" />
+        </beansetting>
+      </path>
+    </block>
+    <block systemName="IB:AUTO:0052" length="0.0" curve="0">
+      <systemName>IB:AUTO:0052</systemName>
+      <userName>BS-T06-S</userName>
+      <permissive>no</permissive>
+    </block>
+    <block systemName="IB:AUTO:0053" length="0.0" curve="0">
+      <systemName>IB:AUTO:0053</systemName>
+      <userName>BS-T08-S</userName>
+      <permissive>no</permissive>
+    </block>
+    <block systemName="IB:AUTO:0054" length="0.0" curve="0">
+      <systemName>IB:AUTO:0054</systemName>
+      <userName>BS-T07-S</userName>
+      <permissive>no</permissive>
+    </block>
+    <block systemName="IB:AUTO:0055" length="0.0" curve="0">
+      <systemName>IB:AUTO:0055</systemName>
+      <userName>BS-T08-L</userName>
+      <permissive>no</permissive>
+    </block>
+    <block systemName="IB:AUTO:0056" length="0.0" curve="0">
+      <systemName>IB:AUTO:0056</systemName>
+      <userName>BS-T10-S</userName>
+      <permissive>no</permissive>
+    </block>
+    <block systemName="IB:AUTO:0057" length="0.0" curve="0">
+      <systemName>IB:AUTO:0057</systemName>
+      <userName>BS-T23-L</userName>
+      <permissive>no</permissive>
+    </block>
+    <block systemName="IB:AUTO:0058" length="0.0" curve="0">
+      <systemName>IB:AUTO:0058</systemName>
+      <userName>BS-T23-S</userName>
+      <permissive>no</permissive>
+    </block>
+    <block systemName="IB:AUTO:0059" length="0.0" curve="0">
+      <systemName>IB:AUTO:0059</systemName>
+      <userName>BS-T22-R</userName>
+      <permissive>no</permissive>
+    </block>
+    <block systemName="IB:AUTO:0060" length="0.0" curve="0">
+      <systemName>IB:AUTO:0060</systemName>
+      <userName>BS-T15-R</userName>
+      <permissive>no</permissive>
+    </block>
+    <block systemName="IB:AUTO:0066" length="0.0" curve="0">
+      <systemName>IB:AUTO:0066</systemName>
+      <userName>B-T13-L</userName>
+      <permissive>no</permissive>
+      <occupancysensor>S-T13-L</occupancysensor>
+      <path todir="64" fromdir="128" block="IB:AUTO:0067">
+        <beansetting setting="2">
+          <turnout systemName="CT13" />
+        </beansetting>
+      </path>
+      <path todir="64" fromdir="128" block="IB:AUTO:0068">
+        <beansetting setting="4">
+          <turnout systemName="CT13" />
+        </beansetting>
+      </path>
+      <path todir="128" fromdir="64" block="IB:AUTO:0074" />
+    </block>
+    <block systemName="IB:AUTO:0067" length="0.0" curve="0">
+      <systemName>IB:AUTO:0067</systemName>
+      <userName>B-T13-R</userName>
+      <permissive>no</permissive>
+      <occupancysensor>S-T13-R</occupancysensor>
+      <path todir="128" fromdir="64" block="IB:AUTO:0066">
+        <beansetting setting="2">
+          <turnout systemName="CT13" />
+        </beansetting>
+      </path>
+      <path todir="64" fromdir="128" block="IB:AUTO:0076" />
+    </block>
+    <block systemName="IB:AUTO:0068" length="0.0" curve="0">
+      <systemName>IB:AUTO:0068</systemName>
+      <userName>B-T13-S</userName>
+      <permissive>no</permissive>
+      <occupancysensor>S-T13-S</occupancysensor>
+      <path todir="128" fromdir="64" block="IB:AUTO:0066">
+        <beansetting setting="4">
+          <turnout systemName="CT13" />
+        </beansetting>
+      </path>
+      <path todir="64" fromdir="128" block="IB:AUTO:0069" />
+    </block>
+    <block systemName="IB:AUTO:0069" length="0.0" curve="0">
+      <systemName>IB:AUTO:0069</systemName>
+      <userName>B-T22-L</userName>
+      <permissive>no</permissive>
+      <occupancysensor>S-T22-L</occupancysensor>
+      <path todir="128" fromdir="64" block="IB:AUTO:0068" />
+      <path todir="64" fromdir="128" block="IB:AUTO:0070">
+        <beansetting setting="2">
+          <turnout systemName="CT12" />
+        </beansetting>
+      </path>
+      <path todir="64" fromdir="128" block="IB:AUTO:0072">
+        <beansetting setting="4">
+          <turnout systemName="CT12" />
+        </beansetting>
+      </path>
+    </block>
+    <block systemName="IB:AUTO:0070" length="0.0" curve="0">
+      <systemName>IB:AUTO:0070</systemName>
+      <userName>B-T22-R</userName>
+      <permissive>no</permissive>
+      <occupancysensor>S-T22-R</occupancysensor>
+      <path todir="128" fromdir="64" block="IB:AUTO:0069">
+        <beansetting setting="2">
+          <turnout systemName="CT12" />
+        </beansetting>
+        <beansetting setting="2">
+          <turnout systemName="CT12" />
+        </beansetting>
+      </path>
+    </block>
+    <block systemName="IB:AUTO:0071" length="0.0" curve="0">
+      <systemName>IB:AUTO:0071</systemName>
+      <userName>B-T12-L</userName>
+      <permissive>no</permissive>
+      <occupancysensor>S-T12-L</occupancysensor>
+      <path todir="64" fromdir="128" block="IB:AUTO:0072">
+        <beansetting setting="2">
+          <turnout systemName="CT12" />
+        </beansetting>
+      </path>
+      <path todir="128" fromdir="64" block="IB:AUTO:0077" />
+    </block>
+    <block systemName="IB:AUTO:0072" length="0.0" curve="0">
+      <systemName>IB:AUTO:0072</systemName>
+      <userName>B-T12-R</userName>
+      <permissive>no</permissive>
+      <occupancysensor>S-T12-R</occupancysensor>
+      <path todir="128" fromdir="64" block="IB:AUTO:0069">
+        <beansetting setting="4">
+          <turnout systemName="CT12" />
+        </beansetting>
+      </path>
+      <path todir="128" fromdir="64" block="IB:AUTO:0071">
+        <beansetting setting="2">
+          <turnout systemName="CT12" />
+        </beansetting>
+      </path>
+    </block>
+    <block systemName="IB:AUTO:0073" length="0.0" curve="0">
+      <systemName>IB:AUTO:0073</systemName>
+      <userName>B-T14-L</userName>
+      <permissive>no</permissive>
+      <occupancysensor>S-T14-L</occupancysensor>
+      <path todir="64" fromdir="128" block="IB:AUTO:0074">
+        <beansetting setting="2">
+          <turnout systemName="CT14" />
+        </beansetting>
+      </path>
+      <path todir="80" fromdir="160" block="IB:AUTO:0075">
+        <beansetting setting="4">
+          <turnout systemName="CT14" />
+        </beansetting>
+      </path>
+    </block>
+    <block systemName="IB:AUTO:0074" length="0.0" curve="0">
+      <systemName>IB:AUTO:0074</systemName>
+      <userName>B-T14-R</userName>
+      <permissive>no</permissive>
+      <occupancysensor>S-T14-R</occupancysensor>
+      <path todir="64" fromdir="128" block="IB:AUTO:0066" />
+      <path todir="128" fromdir="64" block="IB:AUTO:0073">
+        <beansetting setting="2">
+          <turnout systemName="CT14" />
+        </beansetting>
+      </path>
+    </block>
+    <block systemName="IB:AUTO:0075" length="0.0" curve="0">
+      <systemName>IB:AUTO:0075</systemName>
+      <userName>B-T14-S</userName>
+      <permissive>no</permissive>
+      <occupancysensor>S-T14-S</occupancysensor>
+      <path todir="160" fromdir="80" block="IB:AUTO:0073">
+        <beansetting setting="4">
+          <turnout systemName="CT14" />
+        </beansetting>
+      </path>
+    </block>
+    <block systemName="IB:AUTO:0076" length="0.0" curve="0">
+      <systemName>IB:AUTO:0076</systemName>
+      <userName>B-T11-L</userName>
+      <permissive>no</permissive>
+      <occupancysensor>S-T11-L</occupancysensor>
+      <path todir="128" fromdir="64" block="IB:AUTO:0067" />
+      <path todir="64" fromdir="128" block="IB:AUTO:0077">
+        <beansetting setting="2">
+          <turnout systemName="CT11" />
+        </beansetting>
+      </path>
+    </block>
+    <block systemName="IB:AUTO:0077" length="0.0" curve="0">
+      <systemName>IB:AUTO:0077</systemName>
+      <userName>B-T11-R</userName>
+      <permissive>no</permissive>
+      <occupancysensor>S-T11-R</occupancysensor>
+      <path todir="64" fromdir="128" block="IB:AUTO:0071" />
+      <path todir="128" fromdir="64" block="IB:AUTO:0076">
+        <beansetting setting="2">
+          <turnout systemName="CT11" />
+        </beansetting>
+      </path>
+      <path todir="160" fromdir="80" block="IB:AUTO:0079">
+        <beansetting setting="4">
+          <turnout systemName="CT11" />
+        </beansetting>
+      </path>
+    </block>
+    <block systemName="IB:AUTO:0078" length="0.0" curve="0">
+      <systemName>IB:AUTO:0078</systemName>
+      <userName>B-T01-R</userName>
+      <permissive>no</permissive>
+      <occupancysensor>S-T01-R</occupancysensor>
+      <path todir="128" fromdir="64" block="IB:AUTO:0079">
+        <beansetting setting="2">
+          <turnout systemName="CT11" />
+        </beansetting>
+      </path>
+      <path todir="64" fromdir="128" block="IB:AUTO:0081">
+        <beansetting setting="2">
+          <turnout systemName="CT11" />
+        </beansetting>
+      </path>
+    </block>
+    <block systemName="IB:AUTO:0079" length="0.0" curve="0">
+      <systemName>IB:AUTO:0079</systemName>
+      <userName>B-T01-L</userName>
+      <permissive>no</permissive>
+      <occupancysensor>S-T01-L</occupancysensor>
+      <path todir="80" fromdir="160" block="IB:AUTO:0077">
+        <beansetting setting="4">
+          <turnout systemName="CT11" />
+        </beansetting>
+      </path>
+      <path todir="64" fromdir="128" block="IB:AUTO:0078">
+        <beansetting setting="2">
+          <turnout systemName="CT11" />
+        </beansetting>
+      </path>
+    </block>
+    <block systemName="IB:AUTO:0080" length="0.0" curve="0">
+      <systemName>IB:AUTO:0080</systemName>
+      <userName>B-T09-R</userName>
+      <permissive>no</permissive>
+      <occupancysensor>S-T09-R</occupancysensor>
+      <path todir="128" fromdir="64" block="IB:AUTO:0081">
+        <beansetting setting="2">
+          <turnout systemName="CT09" />
+        </beansetting>
+      </path>
+      <path todir="160" fromdir="80" block="IB:AUTO:0082">
+        <beansetting setting="4">
+          <turnout systemName="CT09" />
+        </beansetting>
+      </path>
+    </block>
+    <block systemName="IB:AUTO:0081" length="0.0" curve="0">
+      <systemName>IB:AUTO:0081</systemName>
+      <userName>B-T09-L</userName>
+      <permissive>no</permissive>
+      <occupancysensor>S-T09-L</occupancysensor>
+      <path todir="128" fromdir="64" block="IB:AUTO:0078" />
+      <path todir="64" fromdir="128" block="IB:AUTO:0080">
+        <beansetting setting="2">
+          <turnout systemName="CT09" />
+        </beansetting>
+      </path>
+    </block>
+    <block systemName="IB:AUTO:0082" length="0.0" curve="0">
+      <systemName>IB:AUTO:0082</systemName>
+      <userName>B-T09-S</userName>
+      <permissive>no</permissive>
+      <occupancysensor>S-T09-S</occupancysensor>
+      <path todir="80" fromdir="160" block="IB:AUTO:0080">
+        <beansetting setting="4">
+          <turnout systemName="CT09" />
+        </beansetting>
+      </path>
+    </block>
+  </blocks>
+  <layoutblocks class="jmri.jmrit.display.layoutEditor.configurexml.LayoutBlockManagerXml">
+    <layoutblock systemName="ILB6" occupancysensor="S-T04-L" occupiedsense="2" trackcolor="darkGray" occupiedcolor="blue" extracolor="white">
+      <systemName>ILB6</systemName>
+      <userName>B-T04-L</userName>
+    </layoutblock>
+    <layoutblock systemName="ILB7" occupancysensor="S-T04-R" occupiedsense="2" trackcolor="darkGray" occupiedcolor="blue" extracolor="white">
+      <systemName>ILB7</systemName>
+      <userName>B-T04-R</userName>
+    </layoutblock>
+    <layoutblock systemName="ILB8" occupancysensor="S-T04-S" occupiedsense="2" trackcolor="darkGray" occupiedcolor="red" extracolor="white">
+      <systemName>ILB8</systemName>
+      <userName>B-T04-S</userName>
+    </layoutblock>
+    <layoutblock systemName="ILB9" occupancysensor="S-T02-R" occupiedsense="2" trackcolor="darkGray" occupiedcolor="red" extracolor="white">
+      <systemName>ILB9</systemName>
+      <userName>B-T02-R</userName>
+    </layoutblock>
+    <layoutblock systemName="ILB10" occupancysensor="CS1004" occupiedsense="2" trackcolor="darkGray" occupiedcolor="red" extracolor="white">
+      <systemName>ILB10</systemName>
+      <userName>B-T02-L</userName>
+    </layoutblock>
+    <layoutblock systemName="ILB11" occupancysensor="S-T03-L" occupiedsense="2" trackcolor="darkGray" occupiedcolor="red" extracolor="white">
+      <systemName>ILB11</systemName>
+      <userName>B-T03-L</userName>
+    </layoutblock>
+    <layoutblock systemName="ILB12" occupancysensor="S-T03-R" occupiedsense="2" trackcolor="darkGray" occupiedcolor="red" extracolor="white">
+      <systemName>ILB12</systemName>
+      <userName>B-T03-R</userName>
+    </layoutblock>
+    <layoutblock systemName="ILB13" occupancysensor="S-T05-L" occupiedsense="2" trackcolor="darkGray" occupiedcolor="red" extracolor="white">
+      <systemName>ILB13</systemName>
+      <userName>B-T05-L</userName>
+    </layoutblock>
+    <layoutblock systemName="ILB14" occupancysensor="S-T05-R" occupiedsense="2" trackcolor="darkGray" occupiedcolor="red" extracolor="white">
+      <systemName>ILB14</systemName>
+      <userName>B-T05-R</userName>
+    </layoutblock>
+    <layoutblock systemName="ILB15" occupancysensor="S-T05-S" occupiedsense="2" trackcolor="darkGray" occupiedcolor="red" extracolor="white">
+      <systemName>ILB15</systemName>
+      <userName>B-T05-S</userName>
+    </layoutblock>
+    <layoutblock systemName="ILB16" occupiedsense="2" trackcolor="orange" occupiedcolor="red" extracolor="white">
+      <systemName>ILB16</systemName>
+      <userName>BS-T06-S</userName>
+    </layoutblock>
+    <layoutblock systemName="ILB17" occupiedsense="2" trackcolor="orange" occupiedcolor="red" extracolor="white">
+      <systemName>ILB17</systemName>
+      <userName>BS-T08-S</userName>
+    </layoutblock>
+    <layoutblock systemName="ILB18" occupiedsense="2" trackcolor="orange" occupiedcolor="red" extracolor="white">
+      <systemName>ILB18</systemName>
+      <userName>BS-T07-S</userName>
+    </layoutblock>
+    <layoutblock systemName="ILB19" occupiedsense="2" trackcolor="orange" occupiedcolor="red" extracolor="white">
+      <systemName>ILB19</systemName>
+      <userName>BS-T08-L</userName>
+    </layoutblock>
+    <layoutblock systemName="ILB20" occupiedsense="2" trackcolor="orange" occupiedcolor="red" extracolor="white">
+      <systemName>ILB20</systemName>
+      <userName>BS-T10-S</userName>
+    </layoutblock>
+    <layoutblock systemName="ILB21" occupiedsense="2" trackcolor="orange" occupiedcolor="red" extracolor="white">
+      <systemName>ILB21</systemName>
+      <userName>BS-T23-L</userName>
+    </layoutblock>
+    <layoutblock systemName="ILB22" occupiedsense="2" trackcolor="orange" occupiedcolor="red" extracolor="white">
+      <systemName>ILB22</systemName>
+      <userName>BS-T23-S</userName>
+    </layoutblock>
+    <layoutblock systemName="ILB23" occupiedsense="2" trackcolor="orange" occupiedcolor="red" extracolor="white">
+      <systemName>ILB23</systemName>
+      <userName>BS-T22-R</userName>
+    </layoutblock>
+    <layoutblock systemName="ILB24" occupiedsense="2" trackcolor="orange" occupiedcolor="red" extracolor="white">
+      <systemName>ILB24</systemName>
+      <userName>BS-T15-R</userName>
+    </layoutblock>
+    <layoutblock systemName="ILB26" occupancysensor="S-T13-L" occupiedsense="2" trackcolor="darkGray" occupiedcolor="red" extracolor="white">
+      <systemName>ILB26</systemName>
+      <userName>B-T13-L</userName>
+    </layoutblock>
+    <layoutblock systemName="ILB27" occupancysensor="S-T13-R" occupiedsense="2" trackcolor="darkGray" occupiedcolor="red" extracolor="white">
+      <systemName>ILB27</systemName>
+      <userName>B-T13-R</userName>
+    </layoutblock>
+    <layoutblock systemName="ILB28" occupancysensor="S-T13-S" occupiedsense="2" trackcolor="darkGray" occupiedcolor="red" extracolor="white">
+      <systemName>ILB28</systemName>
+      <userName>B-T13-S</userName>
+    </layoutblock>
+    <layoutblock systemName="ILB29" occupancysensor="S-T22-L" occupiedsense="2" trackcolor="darkGray" occupiedcolor="red" extracolor="white">
+      <systemName>ILB29</systemName>
+      <userName>B-T22-L</userName>
+    </layoutblock>
+    <layoutblock systemName="ILB30" occupancysensor="S-T22-R" occupiedsense="2" trackcolor="darkGray" occupiedcolor="red" extracolor="white">
+      <systemName>ILB30</systemName>
+      <userName>B-T22-R</userName>
+    </layoutblock>
+    <layoutblock systemName="ILB31" occupancysensor="S-T12-L" occupiedsense="2" trackcolor="darkGray" occupiedcolor="red" extracolor="white">
+      <systemName>ILB31</systemName>
+      <userName>B-T12-L</userName>
+    </layoutblock>
+    <layoutblock systemName="ILB32" occupancysensor="S-T12-R" occupiedsense="2" trackcolor="darkGray" occupiedcolor="red" extracolor="white">
+      <systemName>ILB32</systemName>
+      <userName>B-T12-R</userName>
+    </layoutblock>
+    <layoutblock systemName="ILB33" occupancysensor="S-T14-L" occupiedsense="2" trackcolor="darkGray" occupiedcolor="red" extracolor="white">
+      <systemName>ILB33</systemName>
+      <userName>B-T14-L</userName>
+    </layoutblock>
+    <layoutblock systemName="ILB34" occupancysensor="S-T14-R" occupiedsense="2" trackcolor="darkGray" occupiedcolor="red" extracolor="white">
+      <systemName>ILB34</systemName>
+      <userName>B-T14-R</userName>
+    </layoutblock>
+    <layoutblock systemName="ILB35" occupancysensor="S-T14-S" occupiedsense="2" trackcolor="darkGray" occupiedcolor="red" extracolor="white">
+      <systemName>ILB35</systemName>
+      <userName>B-T14-S</userName>
+    </layoutblock>
+    <layoutblock systemName="ILB36" occupancysensor="S-T11-L" occupiedsense="2" trackcolor="darkGray" occupiedcolor="red" extracolor="white">
+      <systemName>ILB36</systemName>
+      <userName>B-T11-L</userName>
+    </layoutblock>
+    <layoutblock systemName="ILB37" occupancysensor="S-T01-R" occupiedsense="2" trackcolor="darkGray" occupiedcolor="red" extracolor="white">
+      <systemName>ILB37</systemName>
+      <userName>B-T01-R</userName>
+    </layoutblock>
+    <layoutblock systemName="ILB38" occupancysensor="S-T01-L" occupiedsense="2" trackcolor="darkGray" occupiedcolor="red" extracolor="white">
+      <systemName>ILB38</systemName>
+      <userName>B-T01-L</userName>
+    </layoutblock>
+    <layoutblock systemName="ILB39" occupancysensor="S-T11-R" occupiedsense="2" trackcolor="darkGray" occupiedcolor="red" extracolor="white">
+      <systemName>ILB39</systemName>
+      <userName>B-T11-R</userName>
+    </layoutblock>
+    <layoutblock systemName="ILB40" occupancysensor="S-T09-R" occupiedsense="2" trackcolor="darkGray" occupiedcolor="red" extracolor="white">
+      <systemName>ILB40</systemName>
+      <userName>B-T09-R</userName>
+    </layoutblock>
+    <layoutblock systemName="ILB41" occupancysensor="S-T09-L" occupiedsense="2" trackcolor="darkGray" occupiedcolor="red" extracolor="white">
+      <systemName>ILB41</systemName>
+      <userName>B-T09-L</userName>
+    </layoutblock>
+    <layoutblock systemName="ILB42" occupancysensor="S-T09-S" occupiedsense="2" trackcolor="darkGray" occupiedcolor="red" extracolor="white">
+      <systemName>ILB42</systemName>
+      <userName>B-T09-S</userName>
+    </layoutblock>
+  </layoutblocks>
+  <transits class="jmri.configurexml.TransitManagerXml">
+    <transit systemName="IZ:AUTO:0001" userName="Rigthtoleft">
+      <systemName>IZ:AUTO:0001</systemName>
+      <userName>Rigthtoleft</userName>
+      <transitsection sectionname="null" sequence="1" direction="4" alternate="no" safe="no" stopallocatingsensor="" />
+      <transitsection sectionname="null" sequence="2" direction="4" alternate="no" safe="no" stopallocatingsensor="" />
+    </transit>
+  </transits>
+  <signalelements class="jmri.jmrit.blockboss.configurexml.BlockBossLogicProviderXml">
+    <signalelement signal="SH1-T04--R" mode="2" watchedturnout="CT04" limitspeed1="false" limitspeed2="false" useflashyellow="false" distantsignal="false">
+      <sensorname>S-T04-L</sensorname>
+      <comment />
+    </signalelement>
+    <signalelement signal="SH1-T04--S" mode="3" watchedturnout="CT04" limitspeed1="false" limitspeed2="false" useflashyellow="false" distantsignal="false">
+      <sensorname>S-T04-L</sensorname>
+      <comment />
+    </signalelement>
+    <signalelement signal="SH3-T02-R" mode="2" watchedturnout="CT02" limitspeed1="false" limitspeed2="false" useflashyellow="false" distantsignal="false">
+      <sensorname>S-T02-L</sensorname>
+      <comment />
+    </signalelement>
+    <signalelement signal="SH4-T03-L" mode="2" watchedturnout="CT03" limitspeed1="false" limitspeed2="false" useflashyellow="false" distantsignal="false">
+      <sensorname>S-T03-R</sensorname>
+      <comment />
+    </signalelement>
+    <signalelement signal="SH5-T05-R" mode="2" watchedturnout="CT05" limitspeed1="false" limitspeed2="false" useflashyellow="false" distantsignal="false">
+      <sensorname>S-T05-L</sensorname>
+      <comment />
+    </signalelement>
+    <signalelement signal="SH5-T05-S" mode="3" watchedturnout="CT05" limitspeed1="false" limitspeed2="false" useflashyellow="false" distantsignal="false">
+      <sensorname>S-T05-L</sensorname>
+      <comment />
+    </signalelement>
+    <signalelement signal="SH7-T13-R" mode="2" watchedturnout="CT13" limitspeed1="false" limitspeed2="false" useflashyellow="false" distantsignal="false">
+      <sensorname>S-T13-L</sensorname>
+      <comment />
+    </signalelement>
+    <signalelement signal="SH8-T13-S" mode="3" watchedturnout="CT13" limitspeed1="false" limitspeed2="false" useflashyellow="false" distantsignal="false">
+      <sensorname>S-T13-L</sensorname>
+      <comment />
+    </signalelement>
+    <signalelement signal="SH9-T22-R" mode="2" watchedturnout="CT22" limitspeed1="false" limitspeed2="false" useflashyellow="false" distantsignal="false">
+      <sensorname>S-T22-L</sensorname>
+      <comment />
+    </signalelement>
+    <signalelement signal="SH10-T12-L" mode="2" watchedturnout="CT12" limitspeed1="false" limitspeed2="false" useflashyellow="false" distantsignal="false">
+      <sensorname>S-T12-R</sensorname>
+      <comment />
+    </signalelement>
+    <signalelement signal="SH11-T14-R" mode="2" watchedturnout="CT14" limitspeed1="false" limitspeed2="false" useflashyellow="false" distantsignal="false">
+      <sensorname>S-T14-L</sensorname>
+      <comment />
+    </signalelement>
+    <signalelement signal="SH12-T14-S" mode="3" watchedturnout="CT14" limitspeed1="false" limitspeed2="false" useflashyellow="false" distantsignal="false">
+      <sensorname>S-T14-L</sensorname>
+      <comment />
+    </signalelement>
+    <signalelement signal="SH13-T11-L" mode="2" watchedturnout="CT11" limitspeed1="false" limitspeed2="false" useflashyellow="false" distantsignal="false">
+      <sensorname>S-T11-R</sensorname>
+      <comment />
+    </signalelement>
+    <signalelement signal="SH14-T01-R" mode="2" watchedturnout="CT01" limitspeed1="false" limitspeed2="false" useflashyellow="false" distantsignal="false">
+      <sensorname>S-T01-L</sensorname>
+      <comment />
+    </signalelement>
+    <signalelement signal="SH15-T09-L" mode="2" watchedturnout="CT09" limitspeed1="false" limitspeed2="false" useflashyellow="false" distantsignal="false">
+      <sensorname>S-T09-R</sensorname>
+      <comment />
+    </signalelement>
+    <signalelement signal="SH16-T09-S" mode="3" watchedturnout="CT09" limitspeed1="false" limitspeed2="false" useflashyellow="false" distantsignal="false">
+      <sensorname>S-T09-R</sensorname>
+      <comment />
+    </signalelement>
+    <signalelement signal="SHV1-T04-L1" mode="2" watchedturnout="CT04" limitspeed1="false" limitspeed2="false" useflashyellow="false" distantsignal="false">
+      <sensorname>S-T04-R</sensorname>
+      <comment />
+    </signalelement>
+    <signalelement signal="SHV1-T04--L2" mode="3" watchedturnout="CT04" limitspeed1="false" limitspeed2="false" useflashyellow="false" distantsignal="false">
+      <sensorname>S-T04-S</sensorname>
+      <comment />
+    </signalelement>
+    <signalelement signal="SHV5-T03-R1" mode="2" watchedturnout="CT03" limitspeed1="false" limitspeed2="false" useflashyellow="false" distantsignal="false">
+      <sensorname>S-T03-L</sensorname>
+      <comment />
+    </signalelement>
+    <signalelement signal="SHV6-T03-R2" mode="3" watchedturnout="CT03" limitspeed1="false" limitspeed2="false" useflashyellow="false" distantsignal="false">
+      <sensorname>S-T02-L</sensorname>
+      <comment />
+    </signalelement>
+    <signalelement signal="SHV7-T02-L1" mode="2" watchedturnout="CT02" limitspeed1="false" limitspeed2="false" useflashyellow="false" distantsignal="false">
+      <sensorname>S-T02-R</sensorname>
+      <comment />
+    </signalelement>
+    <signalelement signal="SHV8-T02-L2" mode="3" watchedturnout="CT02" limitspeed1="false" limitspeed2="false" useflashyellow="false" distantsignal="false">
+      <sensorname>S-T03-R</sensorname>
+      <comment />
+    </signalelement>
+    <signalelement signal="SVH9-T05-L1" mode="2" watchedturnout="CT05" limitspeed1="false" limitspeed2="false" useflashyellow="false" distantsignal="false">
+      <sensorname>S-T05-R</sensorname>
+      <comment />
+    </signalelement>
+    <signalelement signal="SVH10-T05-L2" mode="3" watchedturnout="CT05" limitspeed1="false" limitspeed2="false" useflashyellow="false" distantsignal="false">
+      <sensorname>S-T05-S</sensorname>
+      <comment />
+    </signalelement>
+    <signalelement signal="SVH13-T13-L1" mode="2" watchedturnout="CT13" limitspeed1="false" limitspeed2="false" useflashyellow="false" distantsignal="false">
+      <sensorname>S-T13-R</sensorname>
+      <comment />
+    </signalelement>
+    <signalelement signal="SVH13-T13-L2" mode="3" watchedturnout="CT13" limitspeed1="false" limitspeed2="false" useflashyellow="false" distantsignal="false">
+      <sensorname>S-T13-S</sensorname>
+      <comment />
+    </signalelement>
+    <signalelement signal="SHV13-T22-L1" mode="2" watchedturnout="CT22" limitspeed1="false" limitspeed2="false" useflashyellow="false" distantsignal="false">
+      <sensorname>S-T22-R</sensorname>
+      <comment />
+    </signalelement>
+    <signalelement signal="SHV14-T22-L2" mode="3" watchedturnout="CT22" limitspeed1="false" limitspeed2="false" useflashyellow="false" distantsignal="false">
+      <sensorname>S-T12-R</sensorname>
+      <comment />
+    </signalelement>
+    <signalelement signal="SHV15-T12-R1" mode="2" watchedturnout="CT12" limitspeed1="false" limitspeed2="false" useflashyellow="false" distantsignal="false">
+      <sensorname>S-T12-L</sensorname>
+      <comment />
+    </signalelement>
+    <signalelement signal="SHV16-T12-R2" mode="3" watchedturnout="CT12" limitspeed1="false" limitspeed2="false" useflashyellow="false" distantsignal="false">
+      <sensorname>S-T22-L</sensorname>
+      <comment />
+    </signalelement>
+    <signalelement signal="SHV17-T14-L1" mode="2" watchedturnout="CT14" limitspeed1="false" limitspeed2="false" useflashyellow="false" distantsignal="false">
+      <sensorname>S-T14-R</sensorname>
+      <comment />
+    </signalelement>
+    <signalelement signal="SHV17-T14-L2" mode="3" watchedturnout="CT14" limitspeed1="false" limitspeed2="false" useflashyellow="false" distantsignal="false">
+      <sensorname>S-T14-S</sensorname>
+      <comment />
+    </signalelement>
+    <signalelement signal="SHV19-T11-R1" mode="2" watchedturnout="CT11" limitspeed1="false" limitspeed2="false" useflashyellow="false" distantsignal="false">
+      <sensorname>S-T11-L</sensorname>
+      <comment />
+    </signalelement>
+    <signalelement signal="SHV20-T11-R2" mode="3" watchedturnout="CT11" limitspeed1="false" limitspeed2="false" useflashyellow="false" distantsignal="false">
+      <sensorname>S-T01-L</sensorname>
+      <comment />
+    </signalelement>
+    <signalelement signal="SHV21-T01-L1" mode="2" watchedturnout="CT01" limitspeed1="false" limitspeed2="false" useflashyellow="false" distantsignal="false">
+      <sensorname>S-T01-R</sensorname>
+      <comment />
+    </signalelement>
+    <signalelement signal="SHV22-T01-L2" mode="3" watchedturnout="CT01" limitspeed1="false" limitspeed2="false" useflashyellow="false" distantsignal="false">
+      <sensorname>S-T11-R</sensorname>
+      <comment />
+    </signalelement>
+    <signalelement signal="SHV23-T09-R1" mode="2" watchedturnout="CT09" limitspeed1="false" limitspeed2="false" useflashyellow="false" distantsignal="false">
+      <sensorname>S-T09-L</sensorname>
+      <comment />
+    </signalelement>
+    <signalelement signal="SHV24-T09-R2" mode="3" watchedturnout="CT09" limitspeed1="false" limitspeed2="false" useflashyellow="false" distantsignal="false">
+      <sensorname>S-T09-S</sensorname>
+      <comment />
+    </signalelement>
+  </signalelements>
+  <signalmastlogics class="jmri.managers.configurexml.DefaultSignalMastLogicManagerXml">
+    <logicDelay>500</logicDelay>
+  </signalmastlogics>
+  <meters class="jmri.managers.configurexml.AbstractMeterManagerXml">
+    <meter>
+      <systemName>DVC_CurrentMAIN</systemName>
+    </meter>
+    <meter>
+      <systemName>DVC_CurrentPct</systemName>
+    </meter>
+  </meters>
+  <timebase class="jmri.jmrit.simpleclock.configurexml.SimpleTimebaseXml" time="Fri May 06 18:42:50 CEST 2022" rate="1.0" startrate="1.0" run="yes" master="yes" sync="no" correct="no" display="no" startstopped="no" startrunning="yes" startsettime="no" startclockoption="0" showbutton="no" startsetrate="yes" />
+  <LayoutEditor class="jmri.jmrit.display.layoutEditor.configurexml.LayoutEditorXml" name="My Layout" x="-8" y="-8" windowheight="1056" windowwidth="1936" panelheight="1026" panelwidth="1910" sliders="no" scrollable="none" editable="yes" positionable="yes" controlling="yes" animating="yes" showhelpbar="no" drawgrid="yes" snaponadd="yes" snaponmove="yes" antialiasing="yes" turnoutcircles="yes" tooltipsnotedit="no" tooltipsinedit="yes" mainlinetrackwidth="4" xscale="1.0" yscale="1.0" sidetrackwidth="2" defaulttrackcolor="darkGray" defaultoccupiedtrackcolor="red" defaultalternativetrackcolor="white" defaulttextcolor="black" turnoutcirclecolor="green" turnoutcirclethrowncolor="red" turnoutfillcontrolcircles="yes" turnoutcirclesize="4" turnoutdrawunselectedleg="yes" turnoutbx="200.0" turnoutcx="30.0" turnoutwid="30.0" xoverlong="30.0" xoverhwid="10.0" xovershort="10.0" autoblkgenerate="no" redBackground="192" greenBackground="192" blueBackground="192" gridSize="10" gridSize2nd="10" openDispatcher="no" useDirectTurnoutControl="no">
+    <layoutTrackDrawingOptions name="My Layout" class="jmri.jmrit.display.layoutEditor.configurexml.LayoutTrackDrawingOptionsXml">
+      <mainBallastColor>#000000</mainBallastColor>
+      <mainBallastWidth>0</mainBallastWidth>
+      <mainBlockLineDashPercentageX10>0</mainBlockLineDashPercentageX10>
+      <mainBlockLineWidth>4</mainBlockLineWidth>
+      <mainRailColor>#404040</mainRailColor>
+      <mainRailCount>1</mainRailCount>
+      <mainRailGap>0</mainRailGap>
+      <mainRailWidth>2</mainRailWidth>
+      <mainTieColor>#000000</mainTieColor>
+      <mainTieGap>0</mainTieGap>
+      <mainTieLength>0</mainTieLength>
+      <mainTieWidth>0</mainTieWidth>
+      <sideBallastColor>#000000</sideBallastColor>
+      <sideBallastWidth>0</sideBallastWidth>
+      <sideBlockLineDashPercentageX10>0</sideBlockLineDashPercentageX10>
+      <sideBlockLineWidth>2</sideBlockLineWidth>
+      <sideRailColor>#404040</sideRailColor>
+      <sideRailCount>1</sideRailCount>
+      <sideRailGap>0</sideRailGap>
+      <sideRailWidth>1</sideRailWidth>
+      <sideTieColor>#000000</sideTieColor>
+      <sideTieGap>0</sideTieGap>
+      <sideTieLength>0</sideTieLength>
+      <sideTieWidth>0</sideTieWidth>
+    </layoutTrackDrawingOptions>
+    <positionablelabel x="1340" y="270" level="4" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" text="T12" fontname="Dialog.plain" size="14" style="0" red="0" green="0" blue="0" hasBackground="yes" redBack="255" greenBack="255" blueBack="255" borderSize="2" redBorder="0" greenBorder="255" blueBorder="0" justification="centre" class="jmri.jmrit.display.configurexml.PositionableLabelXml" />
+    <positionablelabel x="1270" y="250" level="4" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" text="T22" fontname="Dialog.plain" size="11" style="0" red="0" green="0" blue="0" hasBackground="yes" redBack="255" greenBack="255" blueBack="255" borderSize="2" redBorder="255" greenBorder="0" blueBorder="0" justification="centre" class="jmri.jmrit.display.configurexml.PositionableLabelXml" />
+    <positionablelabel x="1040" y="310" level="4" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" text="T11" fontname="Dialog.plain" size="14" style="0" red="0" green="0" blue="0" hasBackground="yes" redBack="255" greenBack="255" blueBack="255" borderSize="2" redBorder="0" greenBorder="255" blueBorder="0" justification="centre" class="jmri.jmrit.display.configurexml.PositionableLabelXml" />
+    <positionablelabel x="760" y="320" level="4" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" text="T13" fontname="Dialog.plain" size="14" style="0" red="0" green="0" blue="0" hasBackground="yes" redBack="255" greenBack="255" blueBack="255" borderSize="2" redBorder="0" greenBorder="255" blueBorder="0" justification="centre" class="jmri.jmrit.display.configurexml.PositionableLabelXml" />
+    <positionablelabel x="490" y="320" level="4" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" text="T14" fontname="Dialog.plain" size="14" style="0" red="0" green="0" blue="0" hasBackground="yes" redBack="255" greenBack="255" blueBack="255" borderSize="2" redBorder="0" greenBorder="255" blueBorder="0" justification="centre" class="jmri.jmrit.display.configurexml.PositionableLabelXml" />
+    <positionablelabel x="670" y="181" level="4" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" text="T15" fontname="Dialog.plain" size="14" style="0" red="0" green="0" blue="0" hasBackground="yes" redBack="255" greenBack="255" blueBack="255" borderSize="2" redBorder="0" greenBorder="255" blueBorder="0" justification="centre" class="jmri.jmrit.display.configurexml.PositionableLabelXml" />
+    <positionablelabel x="1740" y="590" level="4" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" text="T05" fontname="Dialog.plain" size="14" style="0" red="0" green="0" blue="0" hasBackground="yes" redBack="255" greenBack="255" blueBack="0" justification="centre" class="jmri.jmrit.display.configurexml.PositionableLabelXml" />
+    <positionablelabel x="1320" y="720" level="4" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" text="T06" fontname="Dialog.plain" size="14" style="0" red="0" green="0" blue="0" hasBackground="yes" redBack="255" greenBack="255" blueBack="0" justification="centre" class="jmri.jmrit.display.configurexml.PositionableLabelXml" />
+    <positionablelabel x="990" y="730" level="4" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" text="T07" fontname="Dialog.plain" size="14" style="0" red="0" green="0" blue="0" hasBackground="yes" redBack="255" greenBack="255" blueBack="0" justification="centre" class="jmri.jmrit.display.configurexml.PositionableLabelXml" />
+    <positionablelabel x="691" y="730" level="4" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" text="T08" fontname="Dialog.plain" size="14" style="0" red="0" green="0" blue="0" hasBackground="yes" redBack="255" greenBack="255" blueBack="0" justification="centre" class="jmri.jmrit.display.configurexml.PositionableLabelXml" />
+    <positionablelabel x="640" y="940" level="4" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" text="T04" fontname="Dialog.plain" size="14" style="0" red="0" green="0" blue="0" hasBackground="yes" redBack="255" greenBack="255" blueBack="255" borderSize="2" redBorder="0" greenBorder="255" blueBorder="0" justification="centre" class="jmri.jmrit.display.configurexml.PositionableLabelXml" />
+    <positionablelabel x="1080" y="850" level="4" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" text="T03" fontname="Dialog.plain" size="14" style="0" red="0" green="0" blue="0" hasBackground="yes" redBack="255" greenBack="255" blueBack="255" borderSize="2" redBorder="0" greenBorder="255" blueBorder="0" justification="centre" class="jmri.jmrit.display.configurexml.PositionableLabelXml" />
+    <positionablelabel x="1330" y="420" level="4" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" text="T09" fontname="Dialog.plain" size="14" style="0" red="0" green="0" blue="0" hasBackground="yes" redBack="255" greenBack="255" blueBack="0" justification="centre" class="jmri.jmrit.display.configurexml.PositionableLabelXml" />
+    <positionablelabel x="1224" y="530" level="4" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" text="T10" fontname="Dialog.plain" size="14" style="0" red="0" green="0" blue="0" hasBackground="yes" redBack="255" greenBack="255" blueBack="0" justification="centre" class="jmri.jmrit.display.configurexml.PositionableLabelXml" />
+    <positionablelabel x="970" y="600" level="4" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" text="T23" fontname="Dialog.plain" size="14" style="0" red="0" green="0" blue="0" hasBackground="yes" redBack="255" greenBack="255" blueBack="0" justification="centre" class="jmri.jmrit.display.configurexml.PositionableLabelXml" />
+    <sensoricon sensor="S-T04-L" x="500" y="870" level="10" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" momentary="false" icon="yes" class="jmri.jmrit.display.configurexml.SensorIconXml">
+      <active url="program:resources/icons/smallschematics/tracksegments/circuit-occupied.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </active>
+      <inactive url="program:resources/icons/smallschematics/tracksegments/circuit-empty.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inactive>
+      <unknown url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </unknown>
+      <inconsistent url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inconsistent>
+      <iconmaps />
+    </sensoricon>
+    <sensoricon sensor="S-T04-R" x="850" y="870" level="10" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" momentary="false" icon="yes" class="jmri.jmrit.display.configurexml.SensorIconXml">
+      <active url="program:resources/icons/smallschematics/tracksegments/circuit-occupied.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </active>
+      <inactive url="program:resources/icons/smallschematics/tracksegments/circuit-empty.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inactive>
+      <unknown url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </unknown>
+      <inconsistent url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inconsistent>
+      <iconmaps />
+    </sensoricon>
+    <sensoricon sensor="S-T04-S" x="1170" y="950" level="10" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" momentary="false" icon="yes" class="jmri.jmrit.display.configurexml.SensorIconXml">
+      <active url="program:resources/icons/smallschematics/tracksegments/circuit-occupied.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </active>
+      <inactive url="program:resources/icons/smallschematics/tracksegments/circuit-empty.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inactive>
+      <unknown url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </unknown>
+      <inconsistent url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inconsistent>
+      <iconmaps />
+    </sensoricon>
+    <sensoricon sensor="S-T02-L" x="799" y="770" level="10" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" momentary="false" icon="yes" class="jmri.jmrit.display.configurexml.SensorIconXml">
+      <active url="program:resources/icons/smallschematics/tracksegments/circuit-occupied.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </active>
+      <inactive url="program:resources/icons/smallschematics/tracksegments/circuit-empty.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inactive>
+      <unknown url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </unknown>
+      <inconsistent url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inconsistent>
+      <iconmaps />
+    </sensoricon>
+    <sensoricon sensor="S-T02-R" x="1099" y="770" level="10" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" momentary="false" icon="yes" text="S-T02-R" size="11" style="0" red="255" green="255" blue="0" hasBackground="no" justification="left" class="jmri.jmrit.display.configurexml.SensorIconXml">
+      <tooltip>S-T02-R</tooltip>
+      <active url="program:resources/icons/smallschematics/tracksegments/circuit-occupied.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </active>
+      <inactive url="program:resources/icons/smallschematics/tracksegments/circuit-empty.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inactive>
+      <unknown url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </unknown>
+      <inconsistent url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inconsistent>
+      <iconmaps />
+      <activeText text="S-T02-R" red="255" green="0" blue="0" />
+      <inactiveText text="S-T02-R" red="255" green="255" blue="0" />
+      <unknownText text="S-T02-R" red="0" green="0" blue="255" />
+      <inconsistentText text="S-T02-R" red="0" green="0" blue="0" />
+    </sensoricon>
+    <sensoricon sensor="S-T03-L" x="940" y="870" level="10" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" momentary="false" icon="yes" class="jmri.jmrit.display.configurexml.SensorIconXml">
+      <active url="program:resources/icons/smallschematics/tracksegments/circuit-occupied.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </active>
+      <inactive url="program:resources/icons/smallschematics/tracksegments/circuit-empty.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inactive>
+      <unknown url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </unknown>
+      <inconsistent url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inconsistent>
+      <iconmaps />
+    </sensoricon>
+    <sensoricon sensor="S-T03-R" x="1230" y="920" level="10" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" momentary="false" icon="yes" class="jmri.jmrit.display.configurexml.SensorIconXml">
+      <active url="program:resources/icons/smallschematics/tracksegments/circuit-occupied.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </active>
+      <inactive url="program:resources/icons/smallschematics/tracksegments/circuit-empty.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inactive>
+      <unknown url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </unknown>
+      <inconsistent url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inconsistent>
+      <iconmaps />
+    </sensoricon>
+    <signalheadicon signalhead="SHV1-T04-L1" x="640" y="910" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" degrees="180" clickmode="3" litmode="false" class="jmri.jmrit.display.configurexml.SignalHeadIconXml">
+      <icons>
+        <held url="program:resources/icons/smallschematics/searchlights/left-held-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </held>
+        <dark url="program:resources/icons/smallschematics/searchlights/left-dark-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </dark>
+        <red url="program:resources/icons/smallschematics/searchlights/left-red-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </red>
+        <yellow url="program:resources/icons/smallschematics/searchlights/left-yellow-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </yellow>
+        <green url="program:resources/icons/smallschematics/searchlights/left-green-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </green>
+        <flashred url="program:resources/icons/smallschematics/searchlights/left-flashred-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </flashred>
+        <flashyellow url="program:resources/icons/smallschematics/searchlights/left-flashyellow-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </flashyellow>
+        <flashgreen url="program:resources/icons/smallschematics/searchlights/left-flashgreen-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </flashgreen>
+      </icons>
+      <iconmaps />
+    </signalheadicon>
+    <signalheadicon signalhead="SH1-T04--R" x="794" y="882" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" degrees="90" clickmode="3" litmode="false" class="jmri.jmrit.display.configurexml.SignalHeadIconXml">
+      <icons>
+        <held url="program:resources/icons/smallschematics/searchlights/left-held-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </held>
+        <dark url="program:resources/icons/smallschematics/searchlights/left-dark-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </dark>
+        <red url="program:resources/icons/smallschematics/searchlights/left-red-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </red>
+        <green url="program:resources/icons/smallschematics/searchlights/left-green-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </green>
+      </icons>
+      <iconmaps />
+    </signalheadicon>
+    <signalheadicon signalhead="SHV7-T02-L1" x="980" y="810" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" degrees="180" clickmode="3" litmode="false" class="jmri.jmrit.display.configurexml.SignalHeadIconXml">
+      <icons>
+        <held url="program:resources/icons/smallschematics/searchlights/left-held-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </held>
+        <dark url="program:resources/icons/smallschematics/searchlights/left-dark-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </dark>
+        <red url="program:resources/icons/smallschematics/searchlights/left-red-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </red>
+        <yellow url="program:resources/icons/smallschematics/searchlights/left-yellow-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </yellow>
+        <green url="program:resources/icons/smallschematics/searchlights/left-green-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </green>
+        <flashred url="program:resources/icons/smallschematics/searchlights/left-flashred-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </flashred>
+        <flashyellow url="program:resources/icons/smallschematics/searchlights/left-flashyellow-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </flashyellow>
+        <flashgreen url="program:resources/icons/smallschematics/searchlights/left-flashgreen-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </flashgreen>
+      </icons>
+      <iconmaps />
+    </signalheadicon>
+    <signalheadicon signalhead="SHV8-T02-L2" x="960" y="810" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" degrees="180" clickmode="3" litmode="false" class="jmri.jmrit.display.configurexml.SignalHeadIconXml">
+      <icons>
+        <held url="program:resources/icons/smallschematics/searchlights/left-held-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </held>
+        <dark url="program:resources/icons/smallschematics/searchlights/left-dark-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </dark>
+        <red url="program:resources/icons/smallschematics/searchlights/left-red-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </red>
+        <yellow url="program:resources/icons/smallschematics/searchlights/left-yellow-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </yellow>
+        <green url="program:resources/icons/smallschematics/searchlights/left-green-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </green>
+        <flashred url="program:resources/icons/smallschematics/searchlights/left-flashred-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </flashred>
+        <flashyellow url="program:resources/icons/smallschematics/searchlights/left-flashyellow-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </flashyellow>
+        <flashgreen url="program:resources/icons/smallschematics/searchlights/left-flashgreen-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </flashgreen>
+      </icons>
+      <iconmaps />
+    </signalheadicon>
+    <signalheadicon signalhead="SH3-T02-R" x="1040" y="780" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" degrees="90" clickmode="3" litmode="false" class="jmri.jmrit.display.configurexml.SignalHeadIconXml">
+      <icons>
+        <held url="program:resources/icons/smallschematics/searchlights/left-held-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </held>
+        <dark url="program:resources/icons/smallschematics/searchlights/left-dark-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </dark>
+        <red url="program:resources/icons/smallschematics/searchlights/left-red-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </red>
+        <green url="program:resources/icons/smallschematics/searchlights/left-green-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </green>
+      </icons>
+      <iconmaps />
+    </signalheadicon>
+    <signalheadicon signalhead="SHV5-T03-R1" x="1120" y="880" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" degrees="90" clickmode="3" litmode="false" class="jmri.jmrit.display.configurexml.SignalHeadIconXml">
+      <icons>
+        <held url="program:resources/icons/smallschematics/searchlights/left-held-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </held>
+        <dark url="program:resources/icons/smallschematics/searchlights/left-dark-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </dark>
+        <red url="program:resources/icons/smallschematics/searchlights/left-red-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </red>
+        <yellow url="program:resources/icons/smallschematics/searchlights/left-yellow-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </yellow>
+        <green url="program:resources/icons/smallschematics/searchlights/left-green-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </green>
+        <flashred url="program:resources/icons/smallschematics/searchlights/left-flashred-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </flashred>
+        <flashyellow url="program:resources/icons/smallschematics/searchlights/left-flashyellow-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </flashyellow>
+        <flashgreen url="program:resources/icons/smallschematics/searchlights/left-flashgreen-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </flashgreen>
+      </icons>
+      <iconmaps />
+    </signalheadicon>
+    <signalheadicon signalhead="SHV6-T03-R2" x="1140" y="880" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" degrees="270" clickmode="3" litmode="false" class="jmri.jmrit.display.configurexml.SignalHeadIconXml">
+      <icons>
+        <held url="program:resources/icons/smallschematics/searchlights/left-held-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </held>
+        <dark url="program:resources/icons/smallschematics/searchlights/left-dark-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </dark>
+        <red url="program:resources/icons/smallschematics/searchlights/left-red-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </red>
+        <yellow url="program:resources/icons/smallschematics/searchlights/left-yellow-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </yellow>
+        <green url="program:resources/icons/smallschematics/searchlights/left-green-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </green>
+        <flashred url="program:resources/icons/smallschematics/searchlights/left-flashred-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </flashred>
+        <flashyellow url="program:resources/icons/smallschematics/searchlights/left-flashyellow-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </flashyellow>
+        <flashgreen url="program:resources/icons/smallschematics/searchlights/left-flashgreen-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </flashgreen>
+      </icons>
+      <iconmaps />
+    </signalheadicon>
+    <signalheadicon signalhead="SH4-T03-L" x="1050" y="900" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" degrees="180" clickmode="3" litmode="false" class="jmri.jmrit.display.configurexml.SignalHeadIconXml">
+      <icons>
+        <held url="program:resources/icons/smallschematics/searchlights/left-held-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </held>
+        <dark url="program:resources/icons/smallschematics/searchlights/left-dark-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </dark>
+        <red url="program:resources/icons/smallschematics/searchlights/left-red-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </red>
+        <green url="program:resources/icons/smallschematics/searchlights/left-green-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </green>
+      </icons>
+      <iconmaps />
+    </signalheadicon>
+    <sensoricon sensor="S-T05-L" x="1640" y="470" level="10" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" momentary="false" icon="yes" class="jmri.jmrit.display.configurexml.SensorIconXml">
+      <active url="program:resources/icons/smallschematics/tracksegments/circuit-occupied.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </active>
+      <inactive url="program:resources/icons/smallschematics/tracksegments/circuit-empty.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inactive>
+      <unknown url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </unknown>
+      <inconsistent url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inconsistent>
+      <iconmaps />
+    </sensoricon>
+    <sensoricon sensor="S-T05-R" x="1670" y="770" level="10" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" momentary="false" icon="yes" class="jmri.jmrit.display.configurexml.SensorIconXml">
+      <active url="program:resources/icons/smallschematics/tracksegments/circuit-occupied.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </active>
+      <inactive url="program:resources/icons/smallschematics/tracksegments/circuit-empty.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inactive>
+      <unknown url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </unknown>
+      <inconsistent url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inconsistent>
+      <iconmaps />
+    </sensoricon>
+    <sensoricon sensor="S-T05-S" x="1560" y="670" level="10" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" momentary="false" icon="yes" class="jmri.jmrit.display.configurexml.SensorIconXml">
+      <active url="program:resources/icons/smallschematics/tracksegments/circuit-occupied.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </active>
+      <inactive url="program:resources/icons/smallschematics/tracksegments/circuit-empty.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inactive>
+      <unknown url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </unknown>
+      <inconsistent url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inconsistent>
+      <iconmaps />
+    </sensoricon>
+    <signalheadicon signalhead="SVH9-T05-L1" x="1703" y="561" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" degrees="270" clickmode="3" litmode="false" class="jmri.jmrit.display.configurexml.SignalHeadIconXml">
+      <icons>
+        <held url="program:resources/icons/smallschematics/searchlights/left-held-short.gif" degrees="270" scale="1.0">
+          <rotation>0</rotation>
+        </held>
+        <dark url="program:resources/icons/smallschematics/searchlights/left-dark-short.gif" degrees="270" scale="1.0">
+          <rotation>0</rotation>
+        </dark>
+        <red url="program:resources/icons/smallschematics/searchlights/left-red-short.gif" degrees="270" scale="1.0">
+          <rotation>0</rotation>
+        </red>
+        <yellow url="program:resources/icons/smallschematics/searchlights/left-yellow-short.gif" degrees="270" scale="1.0">
+          <rotation>0</rotation>
+        </yellow>
+        <green url="program:resources/icons/smallschematics/searchlights/left-green-short.gif" degrees="270" scale="1.0">
+          <rotation>0</rotation>
+        </green>
+        <flashred url="program:resources/icons/smallschematics/searchlights/left-flashred-short.gif" degrees="270" scale="1.0">
+          <rotation>0</rotation>
+        </flashred>
+        <flashyellow url="program:resources/icons/smallschematics/searchlights/left-flashyellow-short.gif" degrees="270" scale="1.0">
+          <rotation>0</rotation>
+        </flashyellow>
+        <flashgreen url="program:resources/icons/smallschematics/searchlights/left-flashgreen-short.gif" degrees="270" scale="1.0">
+          <rotation>0</rotation>
+        </flashgreen>
+      </icons>
+      <iconmaps />
+    </signalheadicon>
+    <signalheadicon signalhead="SVH10-T05-L2" x="1703" y="541" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" degrees="270" clickmode="3" litmode="false" class="jmri.jmrit.display.configurexml.SignalHeadIconXml">
+      <icons>
+        <held url="program:resources/icons/smallschematics/searchlights/left-held-short.gif" degrees="270" scale="1.0">
+          <rotation>0</rotation>
+        </held>
+        <dark url="program:resources/icons/smallschematics/searchlights/left-dark-short.gif" degrees="270" scale="1.0">
+          <rotation>0</rotation>
+        </dark>
+        <red url="program:resources/icons/smallschematics/searchlights/left-red-short.gif" degrees="270" scale="1.0">
+          <rotation>0</rotation>
+        </red>
+        <yellow url="program:resources/icons/smallschematics/searchlights/left-yellow-short.gif" degrees="270" scale="1.0">
+          <rotation>0</rotation>
+        </yellow>
+        <green url="program:resources/icons/smallschematics/searchlights/left-green-short.gif" degrees="270" scale="1.0">
+          <rotation>0</rotation>
+        </green>
+        <flashred url="program:resources/icons/smallschematics/searchlights/left-flashred-short.gif" degrees="270" scale="1.0">
+          <rotation>0</rotation>
+        </flashred>
+        <flashyellow url="program:resources/icons/smallschematics/searchlights/left-flashyellow-short.gif" degrees="270" scale="1.0">
+          <rotation>0</rotation>
+        </flashyellow>
+        <flashgreen url="program:resources/icons/smallschematics/searchlights/left-flashgreen-short.gif" degrees="270" scale="1.0">
+          <rotation>0</rotation>
+        </flashgreen>
+      </icons>
+      <iconmaps />
+    </signalheadicon>
+    <signalheadicon signalhead="SH5-T05-R" x="1723" y="631" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" degrees="90" clickmode="3" litmode="false" class="jmri.jmrit.display.configurexml.SignalHeadIconXml">
+      <icons>
+        <held url="program:resources/icons/smallschematics/searchlights/left-held-short.gif" degrees="90" scale="1.0">
+          <rotation>0</rotation>
+        </held>
+        <dark url="program:resources/icons/smallschematics/searchlights/left-dark-short.gif" degrees="90" scale="1.0">
+          <rotation>0</rotation>
+        </dark>
+        <red url="program:resources/icons/smallschematics/searchlights/left-red-short.gif" degrees="90" scale="1.0">
+          <rotation>0</rotation>
+        </red>
+        <green url="program:resources/icons/smallschematics/searchlights/left-green-short.gif" degrees="90" scale="1.0">
+          <rotation>0</rotation>
+        </green>
+      </icons>
+      <iconmaps />
+    </signalheadicon>
+    <signalheadicon signalhead="SH5-T05-S" x="1611" y="701" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" degrees="135" clickmode="3" litmode="false" class="jmri.jmrit.display.configurexml.SignalHeadIconXml">
+      <icons>
+        <held url="program:resources/icons/smallschematics/searchlights/left-held-short.gif" degrees="135" scale="1.0">
+          <rotation>0</rotation>
+        </held>
+        <dark url="program:resources/icons/smallschematics/searchlights/left-dark-short.gif" degrees="135" scale="1.0">
+          <rotation>0</rotation>
+        </dark>
+        <red url="program:resources/icons/smallschematics/searchlights/left-red-short.gif" degrees="135" scale="1.0">
+          <rotation>0</rotation>
+        </red>
+        <green url="program:resources/icons/smallschematics/searchlights/left-green-short.gif" degrees="135" scale="1.0">
+          <rotation>0</rotation>
+        </green>
+      </icons>
+      <iconmaps />
+    </signalheadicon>
+    <positionablelabel x="930" y="410" level="4" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" text="T01" size="12" style="0" red="64" green="64" blue="64" hasBackground="yes" redBack="255" greenBack="255" blueBack="255" borderSize="2" redBorder="255" greenBorder="0" blueBorder="0" justification="centre" class="jmri.jmrit.display.configurexml.PositionableLabelXml" />
+    <signalheadicon signalhead="SVH13-T13-L1" x="742" y="304" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" degrees="180" clickmode="3" litmode="false" class="jmri.jmrit.display.configurexml.SignalHeadIconXml">
+      <icons>
+        <held url="program:resources/icons/smallschematics/searchlights/left-held-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </held>
+        <dark url="program:resources/icons/smallschematics/searchlights/left-dark-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </dark>
+        <red url="program:resources/icons/smallschematics/searchlights/left-red-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </red>
+        <yellow url="program:resources/icons/smallschematics/searchlights/left-yellow-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </yellow>
+        <green url="program:resources/icons/smallschematics/searchlights/left-green-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </green>
+        <flashred url="program:resources/icons/smallschematics/searchlights/left-flashred-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </flashred>
+        <flashyellow url="program:resources/icons/smallschematics/searchlights/left-flashyellow-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </flashyellow>
+        <flashgreen url="program:resources/icons/smallschematics/searchlights/left-flashgreen-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </flashgreen>
+      </icons>
+      <iconmaps />
+    </signalheadicon>
+    <signalheadicon signalhead="SVH13-T13-L2" x="722" y="304" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" degrees="180" clickmode="3" litmode="false" class="jmri.jmrit.display.configurexml.SignalHeadIconXml">
+      <icons>
+        <held url="program:resources/icons/smallschematics/searchlights/left-held-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </held>
+        <dark url="program:resources/icons/smallschematics/searchlights/left-dark-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </dark>
+        <red url="program:resources/icons/smallschematics/searchlights/left-red-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </red>
+        <yellow url="program:resources/icons/smallschematics/searchlights/left-yellow-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </yellow>
+        <green url="program:resources/icons/smallschematics/searchlights/left-green-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </green>
+        <flashred url="program:resources/icons/smallschematics/searchlights/left-flashred-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </flashred>
+        <flashyellow url="program:resources/icons/smallschematics/searchlights/left-flashyellow-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </flashyellow>
+        <flashgreen url="program:resources/icons/smallschematics/searchlights/left-flashgreen-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </flashgreen>
+      </icons>
+      <iconmaps />
+    </signalheadicon>
+    <signalheadicon signalhead="SH7-T13-R" x="840" y="280" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" degrees="90" clickmode="3" litmode="false" class="jmri.jmrit.display.configurexml.SignalHeadIconXml">
+      <icons>
+        <held url="program:resources/icons/smallschematics/searchlights/left-held-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </held>
+        <dark url="program:resources/icons/smallschematics/searchlights/left-dark-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </dark>
+        <red url="program:resources/icons/smallschematics/searchlights/left-red-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </red>
+        <green url="program:resources/icons/smallschematics/searchlights/left-green-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </green>
+      </icons>
+      <iconmaps />
+    </signalheadicon>
+    <signalheadicon signalhead="SH8-T13-S" x="850" y="230" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" degrees="326" clickmode="3" litmode="false" class="jmri.jmrit.display.configurexml.SignalHeadIconXml">
+      <icons>
+        <held url="program:resources/icons/smallschematics/searchlights/left-held-short.gif" degrees="326" scale="1.0">
+          <rotation>0</rotation>
+        </held>
+        <dark url="program:resources/icons/smallschematics/searchlights/left-dark-short.gif" degrees="326" scale="1.0">
+          <rotation>0</rotation>
+        </dark>
+        <red url="program:resources/icons/smallschematics/searchlights/left-red-short.gif" degrees="326" scale="1.0">
+          <rotation>0</rotation>
+        </red>
+        <green url="program:resources/icons/smallschematics/searchlights/left-green-short.gif" degrees="326" scale="1.0">
+          <rotation>0</rotation>
+        </green>
+      </icons>
+      <iconmaps />
+    </signalheadicon>
+    <sensoricon sensor="S-T13-L" x="710" y="270" level="10" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" momentary="false" icon="yes" class="jmri.jmrit.display.configurexml.SensorIconXml">
+      <active url="program:resources/icons/smallschematics/tracksegments/circuit-occupied.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </active>
+      <inactive url="program:resources/icons/smallschematics/tracksegments/circuit-empty.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inactive>
+      <unknown url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </unknown>
+      <inconsistent url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inconsistent>
+      <iconmaps />
+    </sensoricon>
+    <sensoricon sensor="S-T13-R" x="870" y="270" level="10" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" momentary="false" icon="yes" class="jmri.jmrit.display.configurexml.SensorIconXml">
+      <active url="program:resources/icons/smallschematics/tracksegments/circuit-occupied.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </active>
+      <inactive url="program:resources/icons/smallschematics/tracksegments/circuit-empty.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inactive>
+      <unknown url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </unknown>
+      <inconsistent url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inconsistent>
+      <iconmaps />
+    </sensoricon>
+    <sensoricon sensor="S-T13-S" x="970" y="260" level="10" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" momentary="false" icon="yes" class="jmri.jmrit.display.configurexml.SensorIconXml">
+      <active url="program:resources/icons/smallschematics/tracksegments/circuit-occupied.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </active>
+      <inactive url="program:resources/icons/smallschematics/tracksegments/circuit-empty.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inactive>
+      <unknown url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </unknown>
+      <inconsistent url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inconsistent>
+      <iconmaps />
+    </sensoricon>
+    <sensoricon sensor="S-T22-L" x="1160" y="220" level="10" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" momentary="false" icon="yes" class="jmri.jmrit.display.configurexml.SensorIconXml">
+      <active url="program:resources/icons/smallschematics/tracksegments/circuit-occupied.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </active>
+      <inactive url="program:resources/icons/smallschematics/tracksegments/circuit-empty.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inactive>
+      <unknown url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </unknown>
+      <inconsistent url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inconsistent>
+      <iconmaps />
+    </sensoricon>
+    <sensoricon sensor="S-T22-R" x="1400" y="220" level="10" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" momentary="false" icon="yes" class="jmri.jmrit.display.configurexml.SensorIconXml">
+      <active url="program:resources/icons/smallschematics/tracksegments/circuit-occupied.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </active>
+      <inactive url="program:resources/icons/smallschematics/tracksegments/circuit-empty.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inactive>
+      <unknown url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </unknown>
+      <inconsistent url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inconsistent>
+      <iconmaps />
+    </sensoricon>
+    <sensoricon sensor="S-T12-R" x="1440" y="270" level="10" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" momentary="false" icon="yes" class="jmri.jmrit.display.configurexml.SensorIconXml">
+      <active url="program:resources/icons/smallschematics/tracksegments/circuit-occupied.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </active>
+      <inactive url="program:resources/icons/smallschematics/tracksegments/circuit-empty.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inactive>
+      <unknown url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </unknown>
+      <inconsistent url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inconsistent>
+      <iconmaps />
+    </sensoricon>
+    <sensoricon sensor="S-T12-L" x="1250" y="270" level="10" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" momentary="false" icon="yes" class="jmri.jmrit.display.configurexml.SensorIconXml">
+      <active url="program:resources/icons/smallschematics/tracksegments/circuit-occupied.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </active>
+      <inactive url="program:resources/icons/smallschematics/tracksegments/circuit-empty.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inactive>
+      <unknown url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </unknown>
+      <inconsistent url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inconsistent>
+      <iconmaps />
+    </sensoricon>
+    <signalheadicon signalhead="SHV13-T22-L1" x="1231" y="243" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" degrees="180" clickmode="3" litmode="false" class="jmri.jmrit.display.configurexml.SignalHeadIconXml">
+      <icons>
+        <held url="program:resources/icons/smallschematics/searchlights/left-held-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </held>
+        <dark url="program:resources/icons/smallschematics/searchlights/left-dark-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </dark>
+        <red url="program:resources/icons/smallschematics/searchlights/left-red-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </red>
+        <yellow url="program:resources/icons/smallschematics/searchlights/left-yellow-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </yellow>
+        <green url="program:resources/icons/smallschematics/searchlights/left-green-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </green>
+        <flashred url="program:resources/icons/smallschematics/searchlights/left-flashred-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </flashred>
+        <flashyellow url="program:resources/icons/smallschematics/searchlights/left-flashyellow-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </flashyellow>
+        <flashgreen url="program:resources/icons/smallschematics/searchlights/left-flashgreen-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </flashgreen>
+      </icons>
+      <iconmaps />
+    </signalheadicon>
+    <signalheadicon signalhead="SHV14-T22-L2" x="1211" y="243" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" degrees="180" clickmode="3" litmode="false" class="jmri.jmrit.display.configurexml.SignalHeadIconXml">
+      <icons>
+        <held url="program:resources/icons/smallschematics/searchlights/left-held-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </held>
+        <dark url="program:resources/icons/smallschematics/searchlights/left-dark-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </dark>
+        <red url="program:resources/icons/smallschematics/searchlights/left-red-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </red>
+        <yellow url="program:resources/icons/smallschematics/searchlights/left-yellow-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </yellow>
+        <green url="program:resources/icons/smallschematics/searchlights/left-green-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </green>
+        <flashred url="program:resources/icons/smallschematics/searchlights/left-flashred-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </flashred>
+        <flashyellow url="program:resources/icons/smallschematics/searchlights/left-flashyellow-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </flashyellow>
+        <flashgreen url="program:resources/icons/smallschematics/searchlights/left-flashgreen-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </flashgreen>
+      </icons>
+      <iconmaps />
+    </signalheadicon>
+    <signalheadicon signalhead="SH9-T22-R" x="1320" y="220" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" degrees="90" clickmode="3" litmode="false" class="jmri.jmrit.display.configurexml.SignalHeadIconXml">
+      <icons>
+        <held url="program:resources/icons/smallschematics/searchlights/left-held-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </held>
+        <dark url="program:resources/icons/smallschematics/searchlights/left-dark-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </dark>
+        <red url="program:resources/icons/smallschematics/searchlights/left-red-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </red>
+        <green url="program:resources/icons/smallschematics/searchlights/left-green-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </green>
+      </icons>
+      <iconmaps />
+    </signalheadicon>
+    <signalheadicon signalhead="SHV15-T12-R1" x="1392" y="284" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" degrees="90" clickmode="3" litmode="false" class="jmri.jmrit.display.configurexml.SignalHeadIconXml">
+      <icons>
+        <held url="program:resources/icons/smallschematics/searchlights/left-held-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </held>
+        <dark url="program:resources/icons/smallschematics/searchlights/left-dark-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </dark>
+        <red url="program:resources/icons/smallschematics/searchlights/left-red-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </red>
+        <yellow url="program:resources/icons/smallschematics/searchlights/left-yellow-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </yellow>
+        <green url="program:resources/icons/smallschematics/searchlights/left-green-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </green>
+        <flashred url="program:resources/icons/smallschematics/searchlights/left-flashred-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </flashred>
+        <flashyellow url="program:resources/icons/smallschematics/searchlights/left-flashyellow-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </flashyellow>
+        <flashgreen url="program:resources/icons/smallschematics/searchlights/left-flashgreen-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </flashgreen>
+      </icons>
+      <iconmaps />
+    </signalheadicon>
+    <signalheadicon signalhead="SHV16-T12-R2" x="1412" y="284" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" degrees="90" clickmode="3" litmode="false" class="jmri.jmrit.display.configurexml.SignalHeadIconXml">
+      <icons>
+        <held url="program:resources/icons/smallschematics/searchlights/left-held-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </held>
+        <dark url="program:resources/icons/smallschematics/searchlights/left-dark-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </dark>
+        <red url="program:resources/icons/smallschematics/searchlights/left-red-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </red>
+        <yellow url="program:resources/icons/smallschematics/searchlights/left-yellow-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </yellow>
+        <green url="program:resources/icons/smallschematics/searchlights/left-green-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </green>
+        <flashred url="program:resources/icons/smallschematics/searchlights/left-flashred-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </flashred>
+        <flashyellow url="program:resources/icons/smallschematics/searchlights/left-flashyellow-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </flashyellow>
+        <flashgreen url="program:resources/icons/smallschematics/searchlights/left-flashgreen-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </flashgreen>
+      </icons>
+      <iconmaps />
+    </signalheadicon>
+    <signalheadicon signalhead="SH10-T12-L" x="1295" y="303" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" degrees="180" clickmode="3" litmode="false" class="jmri.jmrit.display.configurexml.SignalHeadIconXml">
+      <icons>
+        <held url="program:resources/icons/smallschematics/searchlights/left-held-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </held>
+        <dark url="program:resources/icons/smallschematics/searchlights/left-dark-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </dark>
+        <red url="program:resources/icons/smallschematics/searchlights/left-red-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </red>
+        <green url="program:resources/icons/smallschematics/searchlights/left-green-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </green>
+      </icons>
+      <iconmaps />
+    </signalheadicon>
+    <sensoricon sensor="S-T14-L" x="430" y="260" level="10" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" momentary="false" icon="yes" class="jmri.jmrit.display.configurexml.SensorIconXml">
+      <active url="program:resources/icons/smallschematics/tracksegments/circuit-occupied.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </active>
+      <inactive url="program:resources/icons/smallschematics/tracksegments/circuit-empty.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inactive>
+      <unknown url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </unknown>
+      <inconsistent url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inconsistent>
+      <iconmaps />
+    </sensoricon>
+    <sensoricon sensor="S-T14-R" x="630" y="270" level="10" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" momentary="false" icon="yes" class="jmri.jmrit.display.configurexml.SensorIconXml">
+      <active url="program:resources/icons/smallschematics/tracksegments/circuit-occupied.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </active>
+      <inactive url="program:resources/icons/smallschematics/tracksegments/circuit-empty.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inactive>
+      <unknown url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </unknown>
+      <inconsistent url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inconsistent>
+      <iconmaps />
+    </sensoricon>
+    <sensoricon sensor="S-T14-S" x="540" y="230" level="10" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" momentary="false" icon="yes" class="jmri.jmrit.display.configurexml.SensorIconXml">
+      <active url="program:resources/icons/smallschematics/tracksegments/circuit-occupied.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </active>
+      <inactive url="program:resources/icons/smallschematics/tracksegments/circuit-empty.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inactive>
+      <unknown url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </unknown>
+      <inconsistent url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inconsistent>
+      <iconmaps />
+    </sensoricon>
+    <signalheadicon signalhead="SHV17-T14-L1" x="452" y="304" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" degrees="180" clickmode="3" litmode="false" class="jmri.jmrit.display.configurexml.SignalHeadIconXml">
+      <icons>
+        <held url="program:resources/icons/smallschematics/searchlights/left-held-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </held>
+        <dark url="program:resources/icons/smallschematics/searchlights/left-dark-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </dark>
+        <red url="program:resources/icons/smallschematics/searchlights/left-red-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </red>
+        <yellow url="program:resources/icons/smallschematics/searchlights/left-yellow-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </yellow>
+        <green url="program:resources/icons/smallschematics/searchlights/left-green-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </green>
+        <flashred url="program:resources/icons/smallschematics/searchlights/left-flashred-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </flashred>
+        <flashyellow url="program:resources/icons/smallschematics/searchlights/left-flashyellow-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </flashyellow>
+        <flashgreen url="program:resources/icons/smallschematics/searchlights/left-flashgreen-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </flashgreen>
+      </icons>
+      <iconmaps />
+    </signalheadicon>
+    <signalheadicon signalhead="SHV17-T14-L2" x="432" y="304" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" degrees="180" clickmode="3" litmode="false" class="jmri.jmrit.display.configurexml.SignalHeadIconXml">
+      <icons>
+        <held url="program:resources/icons/smallschematics/searchlights/left-held-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </held>
+        <dark url="program:resources/icons/smallschematics/searchlights/left-dark-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </dark>
+        <red url="program:resources/icons/smallschematics/searchlights/left-red-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </red>
+        <yellow url="program:resources/icons/smallschematics/searchlights/left-yellow-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </yellow>
+        <green url="program:resources/icons/smallschematics/searchlights/left-green-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </green>
+        <flashred url="program:resources/icons/smallschematics/searchlights/left-flashred-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </flashred>
+        <flashyellow url="program:resources/icons/smallschematics/searchlights/left-flashyellow-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </flashyellow>
+        <flashgreen url="program:resources/icons/smallschematics/searchlights/left-flashgreen-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </flashgreen>
+      </icons>
+      <iconmaps />
+    </signalheadicon>
+    <signalheadicon signalhead="SH11-T14-R" x="590" y="282" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" degrees="90" clickmode="3" litmode="false" class="jmri.jmrit.display.configurexml.SignalHeadIconXml">
+      <icons>
+        <held url="program:resources/icons/smallschematics/searchlights/left-held-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </held>
+        <dark url="program:resources/icons/smallschematics/searchlights/left-dark-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </dark>
+        <red url="program:resources/icons/smallschematics/searchlights/left-red-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </red>
+        <green url="program:resources/icons/smallschematics/searchlights/left-green-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </green>
+      </icons>
+      <iconmaps />
+    </signalheadicon>
+    <signalheadicon signalhead="SH12-T14-S" x="590" y="220" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" degrees="306" clickmode="3" litmode="false" class="jmri.jmrit.display.configurexml.SignalHeadIconXml">
+      <icons>
+        <held url="program:resources/icons/smallschematics/searchlights/left-held-short.gif" degrees="306" scale="1.0">
+          <rotation>0</rotation>
+        </held>
+        <dark url="program:resources/icons/smallschematics/searchlights/left-dark-short.gif" degrees="306" scale="1.0">
+          <rotation>0</rotation>
+        </dark>
+        <red url="program:resources/icons/smallschematics/searchlights/left-red-short.gif" degrees="306" scale="1.0">
+          <rotation>0</rotation>
+        </red>
+        <green url="program:resources/icons/smallschematics/searchlights/left-green-short.gif" degrees="306" scale="1.0">
+          <rotation>0</rotation>
+        </green>
+      </icons>
+      <iconmaps />
+    </signalheadicon>
+    <signalheadicon signalhead="SH13-T11-L" x="988" y="303" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" degrees="180" clickmode="3" litmode="false" class="jmri.jmrit.display.configurexml.SignalHeadIconXml">
+      <icons>
+        <held url="program:resources/icons/smallschematics/searchlights/left-held-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </held>
+        <dark url="program:resources/icons/smallschematics/searchlights/left-dark-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </dark>
+        <red url="program:resources/icons/smallschematics/searchlights/left-red-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </red>
+        <green url="program:resources/icons/smallschematics/searchlights/left-green-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </green>
+      </icons>
+      <iconmaps />
+    </signalheadicon>
+    <signalheadicon signalhead="SHV19-T11-R1" x="1072" y="283" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" degrees="90" clickmode="3" litmode="false" class="jmri.jmrit.display.configurexml.SignalHeadIconXml">
+      <icons>
+        <held url="program:resources/icons/smallschematics/searchlights/left-held-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </held>
+        <dark url="program:resources/icons/smallschematics/searchlights/left-dark-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </dark>
+        <red url="program:resources/icons/smallschematics/searchlights/left-red-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </red>
+        <yellow url="program:resources/icons/smallschematics/searchlights/left-yellow-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </yellow>
+        <green url="program:resources/icons/smallschematics/searchlights/left-green-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </green>
+        <flashred url="program:resources/icons/smallschematics/searchlights/left-flashred-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </flashred>
+        <flashyellow url="program:resources/icons/smallschematics/searchlights/left-flashyellow-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </flashyellow>
+        <flashgreen url="program:resources/icons/smallschematics/searchlights/left-flashgreen-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </flashgreen>
+      </icons>
+      <iconmaps />
+    </signalheadicon>
+    <signalheadicon signalhead="SHV20-T11-R2" x="1092" y="284" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" degrees="90" clickmode="3" litmode="false" class="jmri.jmrit.display.configurexml.SignalHeadIconXml">
+      <icons>
+        <held url="program:resources/icons/smallschematics/searchlights/left-held-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </held>
+        <dark url="program:resources/icons/smallschematics/searchlights/left-dark-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </dark>
+        <red url="program:resources/icons/smallschematics/searchlights/left-red-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </red>
+        <yellow url="program:resources/icons/smallschematics/searchlights/left-yellow-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </yellow>
+        <green url="program:resources/icons/smallschematics/searchlights/left-green-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </green>
+        <flashred url="program:resources/icons/smallschematics/searchlights/left-flashred-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </flashred>
+        <flashyellow url="program:resources/icons/smallschematics/searchlights/left-flashyellow-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </flashyellow>
+        <flashgreen url="program:resources/icons/smallschematics/searchlights/left-flashgreen-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </flashgreen>
+      </icons>
+      <iconmaps />
+    </signalheadicon>
+    <signalheadicon signalhead="SH14-T01-R" x="1035" y="384" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" degrees="90" clickmode="3" litmode="false" class="jmri.jmrit.display.configurexml.SignalHeadIconXml">
+      <icons>
+        <held url="program:resources/icons/smallschematics/searchlights/left-held-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </held>
+        <dark url="program:resources/icons/smallschematics/searchlights/left-dark-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </dark>
+        <red url="program:resources/icons/smallschematics/searchlights/left-red-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </red>
+        <green url="program:resources/icons/smallschematics/searchlights/left-green-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </green>
+      </icons>
+      <iconmaps />
+    </signalheadicon>
+    <signalheadicon signalhead="SHV21-T01-L1" x="951" y="404" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" degrees="180" clickmode="3" litmode="false" class="jmri.jmrit.display.configurexml.SignalHeadIconXml">
+      <icons>
+        <held url="program:resources/icons/smallschematics/searchlights/left-held-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </held>
+        <dark url="program:resources/icons/smallschematics/searchlights/left-dark-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </dark>
+        <red url="program:resources/icons/smallschematics/searchlights/left-red-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </red>
+        <yellow url="program:resources/icons/smallschematics/searchlights/left-yellow-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </yellow>
+        <green url="program:resources/icons/smallschematics/searchlights/left-green-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </green>
+        <flashred url="program:resources/icons/smallschematics/searchlights/left-flashred-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </flashred>
+        <flashyellow url="program:resources/icons/smallschematics/searchlights/left-flashyellow-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </flashyellow>
+        <flashgreen url="program:resources/icons/smallschematics/searchlights/left-flashgreen-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </flashgreen>
+      </icons>
+      <iconmaps />
+    </signalheadicon>
+    <signalheadicon signalhead="SHV22-T01-L2" x="931" y="403" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" degrees="180" clickmode="3" litmode="false" class="jmri.jmrit.display.configurexml.SignalHeadIconXml">
+      <icons>
+        <held url="program:resources/icons/smallschematics/searchlights/left-held-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </held>
+        <dark url="program:resources/icons/smallschematics/searchlights/left-dark-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </dark>
+        <red url="program:resources/icons/smallschematics/searchlights/left-red-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </red>
+        <yellow url="program:resources/icons/smallschematics/searchlights/left-yellow-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </yellow>
+        <green url="program:resources/icons/smallschematics/searchlights/left-green-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </green>
+        <flashred url="program:resources/icons/smallschematics/searchlights/left-flashred-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </flashred>
+        <flashyellow url="program:resources/icons/smallschematics/searchlights/left-flashyellow-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </flashyellow>
+        <flashgreen url="program:resources/icons/smallschematics/searchlights/left-flashgreen-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </flashgreen>
+      </icons>
+      <iconmaps />
+    </signalheadicon>
+    <sensoricon sensor="S-T11-L" x="940" y="310" level="10" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" momentary="false" icon="yes" class="jmri.jmrit.display.configurexml.SensorIconXml">
+      <active url="program:resources/icons/smallschematics/tracksegments/circuit-occupied.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </active>
+      <inactive url="program:resources/icons/smallschematics/tracksegments/circuit-empty.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inactive>
+      <unknown url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </unknown>
+      <inconsistent url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inconsistent>
+      <iconmaps />
+    </sensoricon>
+    <sensoricon sensor="S-T11-R" x="1140" y="320" level="10" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" momentary="false" icon="yes" class="jmri.jmrit.display.configurexml.SensorIconXml">
+      <active url="program:resources/icons/smallschematics/tracksegments/circuit-occupied.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </active>
+      <inactive url="program:resources/icons/smallschematics/tracksegments/circuit-empty.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inactive>
+      <unknown url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </unknown>
+      <inconsistent url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inconsistent>
+      <iconmaps />
+    </sensoricon>
+    <sensoricon sensor="S-T01-L" x="890" y="420" level="10" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" momentary="false" icon="yes" class="jmri.jmrit.display.configurexml.SensorIconXml">
+      <active url="program:resources/icons/smallschematics/tracksegments/circuit-occupied.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </active>
+      <inactive url="program:resources/icons/smallschematics/tracksegments/circuit-empty.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inactive>
+      <unknown url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </unknown>
+      <inconsistent url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inconsistent>
+      <iconmaps />
+    </sensoricon>
+    <sensoricon sensor="S-T01-R" x="1080" y="420" level="10" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" momentary="false" icon="yes" class="jmri.jmrit.display.configurexml.SensorIconXml">
+      <active url="program:resources/icons/smallschematics/tracksegments/circuit-occupied.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </active>
+      <inactive url="program:resources/icons/smallschematics/tracksegments/circuit-empty.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inactive>
+      <unknown url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </unknown>
+      <inconsistent url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inconsistent>
+      <iconmaps />
+    </sensoricon>
+    <signalheadicon signalhead="SHV1-T04--L2" x="620" y="910" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" degrees="180" clickmode="3" litmode="false" class="jmri.jmrit.display.configurexml.SignalHeadIconXml">
+      <icons>
+        <held url="program:resources/icons/smallschematics/searchlights/left-held-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </held>
+        <dark url="program:resources/icons/smallschematics/searchlights/left-dark-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </dark>
+        <red url="program:resources/icons/smallschematics/searchlights/left-red-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </red>
+        <yellow url="program:resources/icons/smallschematics/searchlights/left-yellow-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </yellow>
+        <green url="program:resources/icons/smallschematics/searchlights/left-green-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </green>
+        <flashred url="program:resources/icons/smallschematics/searchlights/left-flashred-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </flashred>
+        <flashyellow url="program:resources/icons/smallschematics/searchlights/left-flashyellow-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </flashyellow>
+        <flashgreen url="program:resources/icons/smallschematics/searchlights/left-flashgreen-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </flashgreen>
+      </icons>
+      <iconmaps />
+    </signalheadicon>
+    <signalheadicon signalhead="SH1-T04--S" x="802" y="957" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" degrees="34" clickmode="3" litmode="false" class="jmri.jmrit.display.configurexml.SignalHeadIconXml">
+      <icons>
+        <held url="program:resources/icons/smallschematics/searchlights/left-held-short.gif" degrees="34" scale="1.0">
+          <rotation>0</rotation>
+        </held>
+        <dark url="program:resources/icons/smallschematics/searchlights/left-dark-short.gif" degrees="34" scale="1.0">
+          <rotation>0</rotation>
+        </dark>
+        <red url="program:resources/icons/smallschematics/searchlights/left-red-short.gif" degrees="34" scale="1.0">
+          <rotation>0</rotation>
+        </red>
+        <green url="program:resources/icons/smallschematics/searchlights/left-green-short.gif" degrees="34" scale="1.0">
+          <rotation>0</rotation>
+        </green>
+      </icons>
+      <iconmaps />
+    </signalheadicon>
+    <signalheadicon signalhead="SHV23-T09-R1" x="1362" y="384" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" degrees="90" clickmode="3" litmode="false" class="jmri.jmrit.display.configurexml.SignalHeadIconXml">
+      <icons>
+        <held url="program:resources/icons/smallschematics/searchlights/left-held-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </held>
+        <dark url="program:resources/icons/smallschematics/searchlights/left-dark-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </dark>
+        <red url="program:resources/icons/smallschematics/searchlights/left-red-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </red>
+        <yellow url="program:resources/icons/smallschematics/searchlights/left-yellow-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </yellow>
+        <green url="program:resources/icons/smallschematics/searchlights/left-green-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </green>
+        <flashred url="program:resources/icons/smallschematics/searchlights/left-flashred-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </flashred>
+        <flashyellow url="program:resources/icons/smallschematics/searchlights/left-flashyellow-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </flashyellow>
+        <flashgreen url="program:resources/icons/smallschematics/searchlights/left-flashgreen-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </flashgreen>
+      </icons>
+      <iconmaps />
+    </signalheadicon>
+    <signalheadicon signalhead="SHV24-T09-R2" x="1382" y="384" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" degrees="90" clickmode="3" litmode="false" class="jmri.jmrit.display.configurexml.SignalHeadIconXml">
+      <icons>
+        <held url="program:resources/icons/smallschematics/searchlights/left-held-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </held>
+        <dark url="program:resources/icons/smallschematics/searchlights/left-dark-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </dark>
+        <red url="program:resources/icons/smallschematics/searchlights/left-red-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </red>
+        <yellow url="program:resources/icons/smallschematics/searchlights/left-yellow-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </yellow>
+        <green url="program:resources/icons/smallschematics/searchlights/left-green-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </green>
+        <flashred url="program:resources/icons/smallschematics/searchlights/left-flashred-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </flashred>
+        <flashyellow url="program:resources/icons/smallschematics/searchlights/left-flashyellow-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </flashyellow>
+        <flashgreen url="program:resources/icons/smallschematics/searchlights/left-flashgreen-short.gif" degrees="0" scale="1.0">
+          <rotation>0</rotation>
+        </flashgreen>
+      </icons>
+      <iconmaps />
+    </signalheadicon>
+    <signalheadicon signalhead="SH15-T09-L" x="1245" y="404" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" degrees="180" clickmode="3" litmode="false" class="jmri.jmrit.display.configurexml.SignalHeadIconXml">
+      <icons>
+        <held url="program:resources/icons/smallschematics/searchlights/left-held-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </held>
+        <dark url="program:resources/icons/smallschematics/searchlights/left-dark-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </dark>
+        <red url="program:resources/icons/smallschematics/searchlights/left-red-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </red>
+        <green url="program:resources/icons/smallschematics/searchlights/left-green-short.gif" degrees="180" scale="1.0">
+          <rotation>0</rotation>
+        </green>
+      </icons>
+      <iconmaps />
+    </signalheadicon>
+    <signalheadicon signalhead="SH16-T09-S" x="1300" y="420" level="9" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" degrees="133" clickmode="3" litmode="false" class="jmri.jmrit.display.configurexml.SignalHeadIconXml">
+      <icons>
+        <held url="program:resources/icons/smallschematics/searchlights/left-held-short.gif" degrees="133" scale="1.0">
+          <rotation>0</rotation>
+        </held>
+        <dark url="program:resources/icons/smallschematics/searchlights/left-dark-short.gif" degrees="133" scale="1.0">
+          <rotation>0</rotation>
+        </dark>
+        <red url="program:resources/icons/smallschematics/searchlights/left-red-short.gif" degrees="133" scale="1.0">
+          <rotation>0</rotation>
+        </red>
+        <green url="program:resources/icons/smallschematics/searchlights/left-green-short.gif" degrees="133" scale="1.0">
+          <rotation>0</rotation>
+        </green>
+      </icons>
+      <iconmaps />
+    </signalheadicon>
+    <sensoricon sensor="S-T09-L" x="1210" y="370" level="10" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" momentary="false" icon="yes" class="jmri.jmrit.display.configurexml.SensorIconXml">
+      <active url="program:resources/icons/smallschematics/tracksegments/circuit-occupied.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </active>
+      <inactive url="program:resources/icons/smallschematics/tracksegments/circuit-empty.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inactive>
+      <unknown url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </unknown>
+      <inconsistent url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inconsistent>
+      <iconmaps />
+    </sensoricon>
+    <sensoricon sensor="S-T09-R" x="1440" y="370" level="10" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" momentary="false" icon="yes" class="jmri.jmrit.display.configurexml.SensorIconXml">
+      <active url="program:resources/icons/smallschematics/tracksegments/circuit-occupied.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </active>
+      <inactive url="program:resources/icons/smallschematics/tracksegments/circuit-empty.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inactive>
+      <unknown url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </unknown>
+      <inconsistent url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inconsistent>
+      <iconmaps />
+    </sensoricon>
+    <sensoricon sensor="S-T09-S" x="1260" y="430" level="10" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" momentary="false" icon="yes" class="jmri.jmrit.display.configurexml.SensorIconXml">
+      <active url="program:resources/icons/smallschematics/tracksegments/circuit-occupied.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </active>
+      <inactive url="program:resources/icons/smallschematics/tracksegments/circuit-empty.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inactive>
+      <unknown url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </unknown>
+      <inconsistent url="program:resources/icons/smallschematics/tracksegments/circuit-error.gif" degrees="0" scale="1.0">
+        <rotation>0</rotation>
+      </inconsistent>
+      <iconmaps />
+    </sensoricon>
+    <positionablelabel x="1000" y="820" level="4" forcecontroloff="false" hidden="no" positionable="true" showtooltip="true" editable="true" text="T02" size="12" style="0" red="0" green="0" blue="0" hasBackground="yes" redBack="255" greenBack="255" blueBack="255" borderSize="2" redBorder="255" greenBorder="0" blueBorder="0" justification="centre" class="jmri.jmrit.display.configurexml.PositionableLabelXml" />
+    <layoutturnout ident="TO9" type="RH_TURNOUT" hidden="no" disabled="no" disableWhenOccupied="no" continuing="2" xcen="1719.0" ycen="599.0" xa="1719.0" ya="559.0" xb="1719.0" yb="639.0" xc="1619.0" yc="699.0" xd="1719.0" yd="559.0" ver="1" class="jmri.jmrit.display.layoutEditor.configurexml.LayoutRHTurnoutXml" turnoutname="CT05" blockname="B-T05-L" connectaname="T17" connectbname="T18" connectcname="T37" signala1name="SVH9-T05-L1" signala2name="SVH10-T05-L2" signalb1name="SH5-T05-R" signalc1name="SH5-T05-S" />
+    <layoutturnout ident="TO10" type="LH_TURNOUT" hidden="no" disabled="no" disableWhenOccupied="no" continuing="2" xcen="1320.0" ycen="400.0" xa="1380.0" ya="400.0" xb="1260.0" yb="400.0" xc="1290.0" yc="430.0" xd="1380.0" yd="400.0" ver="1" class="jmri.jmrit.display.layoutEditor.configurexml.LayoutLHTurnoutXml" turnoutname="CT09" blockname="B-T09-R" connectaname="T22" connectbname="T63" connectcname="T29" signala1name="SHV23-T09-R1" signala2name="SHV24-T09-R2" signalb1name="SH15-T09-L" signalc1name="SH16-T09-S" />
+    <layoutturnout ident="TO12" type="RH_TURNOUT" hidden="no" disabled="no" disableWhenOccupied="no" continuing="2" xcen="1213.0" ycen="519.0" xa="1238.0" ya="488.0" xb="1188.0" yb="550.0" xc="1143.0" yc="519.0" xd="1238.0" yd="488.0" ver="1" class="jmri.jmrit.display.layoutEditor.configurexml.LayoutRHTurnoutXml" turnoutname="CT10" connectaname="T28" connectbname="T21" connectcname="T30" />
+    <layoutturnout ident="TO14" type="RH_TURNOUT" hidden="no" disabled="no" disableWhenOccupied="no" continuing="2" xcen="1010.0" ycen="700.0" xa="1070.0" ya="700.0" xb="950.0" yb="700.0" xc="960.0" yc="670.0" xd="1070.0" yd="700.0" ver="1" class="jmri.jmrit.display.layoutEditor.configurexml.LayoutRHTurnoutXml" turnoutname="CT07" connectaname="T14" connectbname="T40" connectcname="T51" />
+    <layoutturnout ident="TO5" type="LH_TURNOUT" hidden="no" disabled="no" disableWhenOccupied="no" continuing="2" xcen="790.0" ycen="300.0" xa="740.0" ya="300.0" xb="840.0" yb="300.0" xc="880.0" yc="240.0" xd="740.0" yd="300.0" ver="1" class="jmri.jmrit.display.layoutEditor.configurexml.LayoutLHTurnoutXml" turnoutname="CT13" blockname="B-T13-L" connectaname="T59" connectbname="T60" connectcname="T67" signala1name="SVH13-T13-L1" signala2name="SVH13-T13-L2" signalb1name="SH7-T13-R" signalc1name="SH8-T13-S" />
+    <layoutturnout ident="TO1" type="LH_TURNOUT" hidden="no" disabled="no" disableWhenOccupied="no" continuing="2" xcen="710.0" ycen="699.0" xa="750.0" ya="699.0" xb="670.0" yb="699.0" xc="620.0" yc="749.0" xd="750.0" yd="699.0" ver="1" class="jmri.jmrit.display.layoutEditor.configurexml.LayoutLHTurnoutXml" turnoutname="CT08" connectaname="T36" connectbname="T19" connectcname="T16" />
+    <layoutturnout ident="TO11" type="LH_TURNOUT" hidden="no" disabled="no" disableWhenOccupied="no" continuing="2" xcen="520.0" ycen="300.0" xa="450.0" ya="300.0" xb="590.0" yb="300.0" xc="550.0" yc="260.0" xd="450.0" yd="300.0" ver="1" class="jmri.jmrit.display.layoutEditor.configurexml.LayoutLHTurnoutXml" turnoutname="CT14" blockname="B-T14-L" connectaname="T25" connectbname="T58" connectcname="T42" signala1name="SHV17-T14-L1" signala2name="SHV17-T14-L2" signalb1name="SH11-T14-R" signalc1name="SH12-T14-S" />
+    <layoutturnout ident="TO15" type="LH_TURNOUT" hidden="no" disabled="no" disableWhenOccupied="no" continuing="2" xcen="680.0" ycen="161.0" xa="630.0" ya="160.0" xb="730.0" yb="162.0" xc="750.0" yc="130.0" xd="630.0" yd="160.0" ver="1" class="jmri.jmrit.display.layoutEditor.configurexml.LayoutLHTurnoutXml" turnoutname="CT15" connectaname="T70" connectbname="T73" connectcname="T71" />
+    <layoutturnout ident="TO17" type="LH_TURNOUT" hidden="no" disabled="no" disableWhenOccupied="no" continuing="2" xcen="956.0" ycen="589.0" xa="1026.0" ya="589.0" xb="886.0" yb="589.0" xc="906.0" yc="618.0" xd="1026.0" yd="589.0" ver="1" class="jmri.jmrit.display.layoutEditor.configurexml.LayoutLHTurnoutXml" turnoutname="CT23" connectaname="T46" connectbname="T45" connectcname="T41" />
+    <layoutturnout ident="TO6" type="RH_XOVER" hidden="no" disabled="no" disableWhenOccupied="no" continuing="2" xcen="1050.0" ycen="850.0" xa="930.0" ya="800.0" xb="1089.99996" yb="800.0" xc="1170.0" yc="900.0" xd="1010.00004" yd="900.0" ver="1" class="jmri.jmrit.display.layoutEditor.configurexml.LayoutRHXOverXml" turnoutname="CT02" secondturnoutname="CT03" blockname="B-T02-L" blockbname="B-T02-R" blockcname="B-T03-R" blockdname="B-T03-L" connectaname="T47" connectbname="T48" connectcname="T49" connectdname="T33" signala1name="SHV7-T02-L1" signala2name="SHV8-T02-L2" signalb1name="SH3-T02-R" signalc1name="SHV5-T03-R1" signalc2name="SHV6-T03-R2" signald1name="SH4-T03-L" />
+    <layoutturnout ident="TO4" type="RH_TURNOUT" hidden="no" disabled="no" disableWhenOccupied="no" continuing="2" xcen="700.0" ycen="900.0" xa="610.0" ya="900.0" xb="790.0" yb="900.0" xc="800.0" yc="970.0" xd="610.0" yd="900.0" ver="1" class="jmri.jmrit.display.layoutEditor.configurexml.LayoutRHTurnoutXml" turnoutname="CT04" blockname="B-T04-L" connectaname="T8" connectbname="T10" connectcname="T9" signala1name="SHV1-T04-L1" signala2name="SHV1-T04--L2" signalb1name="SH1-T04--R" signalc1name="SH1-T04--S" />
+    <layoutturnout ident="TO7" type="RH_TURNOUT" hidden="no" disabled="no" disableWhenOccupied="no" continuing="2" xcen="1340.0" ycen="700.0" xa="1400.0" ya="700.0" xb="1280.0" yb="700.0" xc="1260.0" yc="640.0" xd="1400.0" yd="700.0" ver="1" class="jmri.jmrit.display.layoutEditor.configurexml.LayoutRHTurnoutXml" turnoutname="CT06" connectaname="T34" connectbname="T15" connectcname="T52" />
+    <layoutturnout ident="TO8" type="RH_XOVER" hidden="no" disabled="no" disableWhenOccupied="no" continuing="2" xcen="1320.0" ycen="270.0" xa="1240.0" ya="240.0" xb="1346.6863742496041" yb="240.0527038440256" xc="1400.0" yc="300.0" xd="1293.3136257503959" yd="299.9472961559744" ver="1" class="jmri.jmrit.display.layoutEditor.configurexml.LayoutRHXOverXml" turnoutname="CT12" secondturnoutname="CT22" blockname="B-T22-L" blockbname="B-T22-R" blockcname="B-T12-R" blockdname="B-T12-L" connectaname="T69" connectbname="T50" connectcname="T38" connectdname="T35" signala1name="SHV13-T22-L1" signala2name="SHV14-T22-L2" signalb1name="SH9-T22-R" signalc1name="SHV15-T12-R1" signalc2name="SHV16-T12-R2" signald1name="SH10-T12-L" />
+    <layoutturnout ident="TO13" type="LH_XOVER" hidden="no" disabled="no" disableWhenOccupied="no" continuing="2" xcen="1020.0" ycen="350.0" xa="996.7667236328125" ya="299.8604736328125" xb="1089.999762243173" yb="300.00000000955356" xc="1043.2332763671875" yc="400.1395263671875" xd="950.000237756827" yd="399.99999999044644" ver="1" class="jmri.jmrit.display.layoutEditor.configurexml.LayoutLHXOverXml" turnoutname="CT11" secondturnoutname="CT01" blockname="B-T11-L" blockbname="B-T11-R" blockcname="B-T01-R" blockdname="B-T01-L" connectaname="T62" connectbname="T68" connectcname="T76" connectdname="T75" signala1name="SH13-T11-L" signalb1name="SHV19-T11-R1" signalb2name="SHV20-T11-R2" signalc1name="SH14-T01-R" signald1name="SHV21-T01-L1" signald2name="SHV22-T01-L2" />
+    <tracksegment ident="T1" connect1name="EB2" type1="POS_POINT" connect2name="A1" type2="POS_POINT" dashed="no" mainline="yes" hidden="no" arc="yes" flip="no" circle="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T3" connect1name="EB3" type1="POS_POINT" connect2name="A2" type2="POS_POINT" dashed="yes" mainline="yes" hidden="no" arc="yes" flip="yes" circle="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T4" connect1name="EB5" type1="POS_POINT" connect2name="A2" type2="POS_POINT" dashed="yes" mainline="yes" hidden="no" arc="yes" flip="no" circle="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T11" connect1name="EB9" type1="POS_POINT" connect2name="A9" type2="POS_POINT" dashed="yes" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T13" connect1name="A3" type1="POS_POINT" connect2name="EB14" type2="POS_POINT" dashed="no" mainline="yes" hidden="no" arc="yes" flip="no" circle="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T17" blockname="B-T05-L" connect1name="EB15" type1="POS_POINT" connect2name="TO9" type2="TURNOUT_A" dashed="yes" mainline="yes" hidden="no" arc="yes" flip="no" circle="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T18" blockname="B-T05-R" connect1name="TO9" type1="TURNOUT_B" connect2name="EB16" type2="POS_POINT" dashed="yes" mainline="yes" hidden="no" arc="yes" flip="no" circle="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T22" connect1name="TO10" type1="TURNOUT_A" connect2name="EB17" type2="POS_POINT" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T23" connect1name="A10" type1="POS_POINT" connect2name="EB18" type2="POS_POINT" dashed="yes" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T24" connect1name="EB24" type1="POS_POINT" connect2name="A3" type2="POS_POINT" dashed="no" mainline="yes" hidden="no" arc="yes" flip="no" circle="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml">
+      <decorations>
+        <bumper end="start" color="#000000" linewidth="8" length="8" />
+      </decorations>
+    </tracksegment>
+    <tracksegment ident="T26" connect1name="A6" type1="POS_POINT" connect2name="EB26" type2="POS_POINT" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T30" connect1name="EB28" type1="POS_POINT" connect2name="TO12" type2="TURNOUT_C" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T37" blockname="B-T05-S" connect1name="TO9" type1="TURNOUT_C" connect2name="A11" type2="POS_POINT" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T16" connect1name="TO1" type1="TURNOUT_C" connect2name="A18" type2="POS_POINT" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T19" connect1name="TO1" type1="TURNOUT_B" connect2name="A17" type2="POS_POINT" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T12" connect1name="A1" type1="POS_POINT" connect2name="A5" type2="POS_POINT" dashed="no" mainline="yes" hidden="no" arc="yes" flip="no" circle="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T25" blockname="B-T14-L" connect1name="A5" type1="POS_POINT" connect2name="TO11" type2="TURNOUT_A" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T43" blockname="BS-T10-S" connect1name="EB32" type1="POS_POINT" connect2name="EB34" type2="POS_POINT" dashed="no" mainline="no" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T44" blockname="BS-T22-R" connect1name="EB37" type1="POS_POINT" connect2name="EB36" type2="POS_POINT" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T45" connect1name="TO17" type1="TURNOUT_B" connect2name="A20" type2="POS_POINT" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T39" blockname="BS-T06-S" connect1name="A12" type1="POS_POINT" connect2name="EB21" type2="POS_POINT" dashed="no" mainline="no" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T41" connect1name="TO17" type1="TURNOUT_C" connect2name="A21" type2="POS_POINT" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T46" connect1name="TO17" type1="TURNOUT_A" connect2name="A4" type2="POS_POINT" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T9" blockname="B-T04-S" connect1name="TO4" type1="TURNOUT_C" connect2name="A27" type2="POS_POINT" dashed="no" mainline="no" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T8" blockname="B-T04-L" connect1name="EB8" type1="POS_POINT" connect2name="TO4" type2="TURNOUT_A" dashed="no" mainline="no" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T10" blockname="B-T04-R" connect1name="TO4" type1="TURNOUT_B" connect2name="A7" type2="POS_POINT" dashed="no" mainline="no" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T33" blockname="B-T03-L" connect1name="A7" type1="POS_POINT" connect2name="TO6" type2="TURNOUT_D" dashed="no" mainline="no" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T47" blockname="B-T02-L" connect1name="A9" type1="POS_POINT" connect2name="TO6" type2="TURNOUT_A" dashed="no" mainline="no" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T48" blockname="B-T02-R" connect1name="TO6" type1="TURNOUT_B" connect2name="A10" type2="POS_POINT" dashed="no" mainline="no" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T49" blockname="B-T03-R" connect1name="TO6" type1="TURNOUT_C" connect2name="A6" type2="POS_POINT" dashed="no" mainline="no" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T34" connect1name="TO7" type1="TURNOUT_A" connect2name="A11" type2="POS_POINT" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T14" connect1name="TO14" type1="TURNOUT_A" connect2name="A13" type2="POS_POINT" dashed="no" mainline="no" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T15" connect1name="A13" type1="POS_POINT" connect2name="TO7" type2="TURNOUT_B" dashed="no" mainline="no" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T36" connect1name="TO1" type1="TURNOUT_A" connect2name="A14" type2="POS_POINT" dashed="no" mainline="no" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T40" connect1name="A14" type1="POS_POINT" connect2name="TO14" type2="TURNOUT_B" dashed="no" mainline="no" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T52" connect1name="A12" type1="POS_POINT" connect2name="TO7" type2="TURNOUT_C" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T51" connect1name="A15" type1="POS_POINT" connect2name="TO14" type2="TURNOUT_C" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T53" blockname="BS-T07-S" connect1name="EB1" type1="POS_POINT" connect2name="A15" type2="POS_POINT" dashed="no" mainline="no" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T54" blockname="BS-T08-L" connect1name="EB4" type1="POS_POINT" connect2name="A17" type2="POS_POINT" dashed="no" mainline="no" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T55" blockname="BS-T08-S" connect1name="EB10" type1="POS_POINT" connect2name="A18" type2="POS_POINT" dashed="no" mainline="no" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T21" connect1name="TO12" type1="TURNOUT_B" connect2name="A4" type2="POS_POINT" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T28" connect1name="TO12" type1="TURNOUT_A" connect2name="A16" type2="POS_POINT" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T29" blockname="B-T09-S" connect1name="TO10" type1="TURNOUT_C" connect2name="A16" type2="POS_POINT" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T56" blockname="BS-T23-L" connect1name="EB11" type1="POS_POINT" connect2name="A20" type2="POS_POINT" dashed="no" mainline="no" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T57" blockname="BS-T23-S" connect1name="EB13" type1="POS_POINT" connect2name="A21" type2="POS_POINT" dashed="no" mainline="no" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T35" blockname="B-T12-L" connect1name="A8" type1="POS_POINT" connect2name="TO8" type2="TURNOUT_D" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T38" blockname="B-T12-R" connect1name="TO8" type1="TURNOUT_C" connect2name="EB25" type2="POS_POINT" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T50" blockname="B-T22-R" connect1name="TO8" type1="TURNOUT_B" connect2name="A24" type2="POS_POINT" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T61" connect1name="EB6" type1="POS_POINT" connect2name="A33" type2="POS_POINT" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T63" blockname="B-T09-L" connect1name="A19" type1="POS_POINT" connect2name="TO10" type2="TURNOUT_B" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T64" blockname="BS-T15-R" connect1name="A23" type1="POS_POINT" connect2name="EB7" type2="POS_POINT" dashed="no" mainline="no" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T65" connect1name="A26" type1="POS_POINT" connect2name="A22" type2="POS_POINT" dashed="no" mainline="yes" hidden="no" arc="yes" flip="no" circle="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml">
+      <decorations>
+        <bridge side="left" color="#00FFFF" linewidth="1" approachwidth="4" deckwidth="10" />
+      </decorations>
+    </tracksegment>
+    <tracksegment ident="T66" connect1name="A22" type1="POS_POINT" connect2name="A27" type2="POS_POINT" dashed="no" mainline="yes" hidden="no" arc="yes" flip="no" circle="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml">
+      <decorations>
+        <bridge side="left" color="#00FFFF" linewidth="1" approachwidth="4" deckwidth="10" />
+      </decorations>
+    </tracksegment>
+    <tracksegment ident="T58" blockname="B-T14-R" connect1name="TO11" type1="TURNOUT_B" connect2name="A28" type2="POS_POINT" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T59" blockname="B-T13-L" connect1name="A28" type1="POS_POINT" connect2name="TO5" type2="TURNOUT_A" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T60" blockname="B-T13-R" connect1name="TO5" type1="TURNOUT_B" connect2name="A32" type2="POS_POINT" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T67" blockname="B-T13-S" connect1name="TO5" type1="TURNOUT_C" connect2name="A25" type2="POS_POINT" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T69" blockname="B-T22-L" connect1name="TO8" type1="TURNOUT_A" connect2name="A25" type2="POS_POINT" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T42" blockname="B-T14-S" connect1name="TO11" type1="TURNOUT_C" connect2name="A29" type2="POS_POINT" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T70" connect1name="A29" type1="POS_POINT" connect2name="TO15" type2="TURNOUT_A" dashed="no" mainline="no" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T71" connect1name="TO15" type1="TURNOUT_C" connect2name="A30" type2="POS_POINT" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T72" connect1name="A30" type1="POS_POINT" connect2name="A26" type2="POS_POINT" dashed="no" mainline="yes" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T73" connect1name="TO15" type1="TURNOUT_B" connect2name="A31" type2="POS_POINT" dashed="no" mainline="no" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T74" connect1name="A31" type1="POS_POINT" connect2name="A23" type2="POS_POINT" dashed="no" mainline="no" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T62" blockname="B-T11-L" connect1name="A32" type1="POS_POINT" connect2name="TO13" type2="TURNOUT_A" dashed="no" mainline="no" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T68" blockname="B-T11-R" connect1name="TO13" type1="TURNOUT_B" connect2name="A8" type2="POS_POINT" dashed="no" mainline="no" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T75" blockname="B-T01-L" connect1name="A33" type1="POS_POINT" connect2name="TO13" type2="TURNOUT_D" dashed="no" mainline="no" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <tracksegment ident="T76" blockname="B-T01-R" connect1name="TO13" type1="TURNOUT_C" connect2name="A19" type2="POS_POINT" dashed="no" mainline="no" hidden="no" class="jmri.jmrit.display.layoutEditor.configurexml.TrackSegmentXml" />
+    <positionablepoint ident="A1" type="ANCHOR" x="119.0" y="599.0" connect1name="T1" connect2name="T12" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="EB2" type="END_BUMPER" x="419.0" y="899.0" connect1name="T1" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="EB3" type="END_BUMPER" x="419.0" y="399.0" connect1name="T3" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="EB5" type="END_BUMPER" x="419.0" y="799.0" connect1name="T4" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="A2" type="ANCHOR" x="219.0" y="599.0" connect1name="T3" connect2name="T4" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="EB6" type="END_BUMPER" x="419.0" y="399.0" connect1name="T61" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="EB8" type="END_BUMPER" x="419.0" y="899.0" connect1name="T8" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="EB9" type="END_BUMPER" x="419.0" y="799.0" connect1name="T11" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="EB14" type="END_BUMPER" x="1519.0" y="899.0" connect1name="T13" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="A3" type="ANCHOR" x="1819.0" y="599.0" connect1name="T13" connect2name="T24" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="EB15" type="END_BUMPER" x="1519.0" y="399.0" connect1name="T17" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="EB16" type="END_BUMPER" x="1519.0" y="799.0" connect1name="T18" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="EB17" type="END_BUMPER" x="1519.0" y="399.0" connect1name="T22" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="EB18" type="END_BUMPER" x="1519.0" y="799.0" connect1name="T23" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="EB24" type="END_BUMPER" x="1519.0" y="299.0" connect1name="T24" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="EB25" type="END_BUMPER" x="1519.0" y="299.0" connect1name="T38" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="EB26" type="END_BUMPER" x="1519.0" y="899.0" connect1name="T26" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="EB28" type="END_BUMPER" x="984.0" y="520.0" connect1name="T30" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="A17" type="ANCHOR" x="500.0" y="700.0" connect1name="T19" connect2name="T54" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="A27" type="ANCHOR" x="1600.0" y="960.0" connect1name="T9" connect2name="T66" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="A18" type="ANCHOR" x="500.0" y="750.0" connect1name="T16" connect2name="T55" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="A5" type="ANCHOR" x="400.0" y="300.0" connect1name="T12" connect2name="T25" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="A23" type="ANCHOR" x="1500.0" y="161.0" connect1name="T64" connect2name="T74" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="A26" type="ANCHOR" x="1520.0" y="130.0" connect1name="T65" connect2name="T72" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="A24" type="ANCHOR" x="1500.0" y="240.0" connect1name="T50" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="EB21" type="END_BUMPER" x="396.0" y="639.0" connect1name="T39" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="A20" type="ANCHOR" x="626.0" y="588.0" connect1name="T45" connect2name="T56" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="EB32" type="END_BUMPER" x="884.0" y="520.0" connect1name="T43" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="EB34" type="END_BUMPER" x="984.0" y="520.0" connect1name="T43" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="EB36" type="END_BUMPER" x="1600.0" y="240.0" connect1name="T44" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="EB37" type="END_BUMPER" x="1500.0" y="240.0" connect1name="T44" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="A21" type="ANCHOR" x="626.0" y="618.0" connect1name="T41" connect2name="T57" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="A4" type="ANCHOR" x="1160.0" y="590.0" connect1name="T46" connect2name="T21" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="A6" type="ANCHOR" x="1300.0" y="900.0" connect1name="T26" connect2name="T49" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="A9" type="ANCHOR" x="800.0" y="800.0" connect1name="T11" connect2name="T47" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="A10" type="ANCHOR" x="1250.0" y="800.0" connect1name="T23" connect2name="T48" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="A7" type="ANCHOR" x="900.0" y="900.0" connect1name="T10" connect2name="T33" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="A8" type="ANCHOR" x="1200.0" y="300.0" connect1name="T35" connect2name="T68" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="A11" type="ANCHOR" x="1500.0" y="700.0" connect1name="T37" connect2name="T34" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="A12" type="ANCHOR" x="500.0" y="640.0" connect1name="T39" connect2name="T52" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="A13" type="ANCHOR" x="1180.0" y="700.0" connect1name="T14" connect2name="T15" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="A14" type="ANCHOR" x="850.0" y="700.0" connect1name="T36" connect2name="T40" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="EB1" type="END_BUMPER" x="396.0" y="669.0" connect1name="T53" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="A15" type="ANCHOR" x="500.0" y="670.0" connect1name="T51" connect2name="T53" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="EB4" type="END_BUMPER" x="396.0" y="699.0" connect1name="T54" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="EB10" type="END_BUMPER" x="396.0" y="749.0" connect1name="T55" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="A16" type="ANCHOR" x="1270.0" y="460.0" connect1name="T28" connect2name="T29" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="EB11" type="END_BUMPER" x="520.0" y="590.0" connect1name="T56" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="EB13" type="END_BUMPER" x="520.0" y="620.0" connect1name="T57" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="A19" type="ANCHOR" x="1130.0" y="400.0" connect1name="T63" connect2name="T76" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="EB7" type="END_BUMPER" x="1600.0" y="161.0" connect1name="T64" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="A22" type="ANCHOR" x="1860.0" y="600.0" connect1name="T65" connect2name="T66" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="A28" type="ANCHOR" x="680.0" y="300.0" connect1name="T58" connect2name="T59" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="A25" type="ANCHOR" x="1040.0" y="240.0" connect1name="T67" connect2name="T69" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="A29" type="ANCHOR" x="580.0" y="220.0" connect1name="T42" connect2name="T70" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="A30" type="ANCHOR" x="900.0" y="130.0" connect1name="T71" connect2name="T72" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="A31" type="ANCHOR" x="900.0" y="160.0" connect1name="T73" connect2name="T74" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="A32" type="ANCHOR" x="920.0" y="300.0" connect1name="T60" connect2name="T62" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+    <positionablepoint ident="A33" type="ANCHOR" x="840.0" y="400.0" connect1name="T61" connect2name="T75" class="jmri.jmrit.display.layoutEditor.configurexml.PositionablePointXml" />
+  </LayoutEditor>
+  <filehistory>
+    <operation>
+      <type>app</type>
+      <date>Sat Jan 07 22:09:02 CET 2023</date>
+      <filename>JMRI program</filename>
+    </operation>
+    <operation>
+      <type>Load OK</type>
+      <date>Sat Jan 07 22:09:24 CET 2023</date>
+      <filename>/C:/Users/setzi/OneDrive/03-JMRI_Rep/MyRailPE.jmri/MyJMRI_Ext.xml</filename>
+      <filehistory>
+        <operation>
+          <type>app</type>
+          <date>Sat Jan 07 11:52:33 CET 2023</date>
+          <filename>JMRI program</filename>
+        </operation>
+        <operation>
+          <type>Load OK</type>
+          <date>Sat Jan 07 11:53:06 CET 2023</date>
+          <filename>/C:/Users/setzi/OneDrive/03-JMRI_Rep/MyRailPE.jmri/MyJMRI_Ext.xml</filename>
+          <filehistory>
+            <operation>
+              <type>app</type>
+              <date>Sat Jan 07 11:26:15 CET 2023</date>
+              <filename>JMRI program</filename>
+            </operation>
+            <operation>
+              <type>Load OK</type>
+              <date>Sat Jan 07 11:26:28 CET 2023</date>
+              <filename>/C:/Users/setzi/OneDrive/03-JMRI_Rep/MyRailPE.jmri/MyJMRI_Ext.xml</filename>
+              <filehistory>
+                <operation>
+                  <type>app</type>
+                  <date>Fri Jan 06 10:26:21 CET 2023</date>
+                  <filename>JMRI program</filename>
+                </operation>
+                <operation>
+                  <type>Load OK</type>
+                  <date>Fri Jan 06 10:26:54 CET 2023</date>
+                  <filename>/C:/Users/setzi/OneDrive/03-JMRI_Rep/MyRailPE2022.jmri/MyJMRI_ext_Sens2.xml</filename>
+                  <filehistory>
+                    <operation>
+                      <type>app</type>
+                      <date>Thu Jan 05 21:54:45 CET 2023</date>
+                      <filename>JMRI program</filename>
+                    </operation>
+                    <operation>
+                      <type>Load OK</type>
+                      <date>Thu Jan 05 21:56:07 CET 2023</date>
+                      <filename>/C:/Users/setzi/OneDrive/03-JMRI_Rep/MyRailPE2022.jmri/MyJMRI_ext_Sens2.xml</filename>
+                      <filehistory>
+                        <operation>
+                          <type>app</type>
+                          <date>Thu Jan 05 21:41:14 CET 2023</date>
+                          <filename>JMRI program</filename>
+                        </operation>
+                        <operation>
+                          <type>Load OK</type>
+                          <date>Thu Jan 05 21:41:47 CET 2023</date>
+                          <filename>/home/pi/.jmri/MyRailPE2022.jmri/MyJMRI_ext_Sens2.xml</filename>
+                        </operation>
+                        <operation>
+                          <type>Store</type>
+                          <date>Thu Jan 05 21:48:40 CET 2023</date>
+                          <filename />
+                        </operation>
+                      </filehistory>
+                    </operation>
+                    <operation>
+                      <type>Store</type>
+                      <date>Thu Jan 05 23:19:02 CET 2023</date>
+                      <filename />
+                    </operation>
+                  </filehistory>
+                </operation>
+                <operation>
+                  <type>Store</type>
+                  <date>Fri Jan 06 18:49:53 CET 2023</date>
+                  <filename />
+                </operation>
+              </filehistory>
+            </operation>
+            <operation>
+              <type>Store</type>
+              <date>Sat Jan 07 11:32:05 CET 2023</date>
+              <filename />
+            </operation>
+          </filehistory>
+        </operation>
+        <operation>
+          <type>Store</type>
+          <date>Sat Jan 07 11:54:35 CET 2023</date>
+          <filename />
+        </operation>
+      </filehistory>
+    </operation>
+    <operation>
+      <type>Store</type>
+      <date>Sat Jan 07 23:00:41 CET 2023</date>
+      <filename />
+    </operation>
+  </filehistory>
+  <!--Written by JMRI version 5.2+R760b98537f on Sat Jan 07 23:00:41 CET 2023-->
+</layout-config>
