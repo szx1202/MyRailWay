@@ -29,7 +29,10 @@ Servo myServos[numServos];
 Auto485 bus(DE_PIN); // Arduino pin 2 -> MAX485 DE and RE pins
  
 // Define CMRI connection with 64 inputs and 32 outputs
-CMRI cmri(CMRI_ADDR, 64, 32, bus);
+//CMRI cmri(CMRI_ADDR, 64, 32, bus);
+
+// Define CMRI connection with 64 inputs and 128 outputs
+CMRI cmri(CMRI_ADDR, 64, 128, bus);
 
 // Create tables to hold data about the servo positions
 int Status[numServos]; //Create a table to hold the status of each turnout, signal, etc.
@@ -40,18 +43,17 @@ void setup() {
 
   // Set pins 3-19 and 22-69 as input pins for sensors
   
-    for (int i=3; i<=19; i++)  {
+    for (int i=3; i<20; i++)  {
            pinMode(i, INPUT_PULLUP);       // set sensor shield pins 3-19 as inputs
            myServos[i].attach(i);
         }
         
-    for (int i=22; i<=23; i++)  {
-           pinMode(i, INPUT_PULLUP);       // set sensor shield pins 22-30 as inputs
-           myServos[i].attach(i);
+    for (int i=22; i<50; i++)  {
+           pinMode(i, INPUT_PULLUP);       // set sensor shield pins 22-49 as inputs
         }
     
-    for (int i=24; i<=53; i++)  {
-       pinMode(i, INPUT_PULLUP);       // set sensor shield pins 30-69 as inputs
+    for (int i=50; i<70; i++)  {
+       pinMode(i, OUTPUT);       // set sensor shield pins 50-69 as outputs
       }
         
   // Start the serial connection
@@ -59,65 +61,88 @@ void setup() {
   bus.begin(19200);
   
    // SET THE THROW AND CLOSE VALUES FOR EACH SERVO BASED ON THE CALIBRATION PROCESS
-  
-    //Servo connection 0 - point motor
-//        for (int i=3; i<=19; i++)  {
-//            Throw[i] = 90;
-//            Close[i] = 180;
-//        }
+
   Throw[2] = 130;
   Close[2] = 90;
+  myServos[2].attach(2);
  
   Throw[3] = 110; 
-  Close[3] = 90;
+  Close[3] = 85;
+  myServos[3].attach(3);
   
   Throw[4] = 107; 
   Close[4] = 90;
+  myServos[4].attach(4);
   
   Throw[5] = 110; 
   Close[5] = 85;
-
+  myServos[5].attach(5);
+  
   Throw[6] = 100; 
   Close[6] = 80; 
+  myServos[6].attach(6);
   
+
   Throw[7] = 113; 
   Close[7] = 85;
-  
+  myServos[7].attach(7);
+    
   Throw[8] = 105;
   Close[8] = 85;
-
+  myServos[8].attach(8);
+  
   Throw[9] = 105;
   Close[9] = 85;
+  myServos[9].attach(9);
   
   Throw[10] = 110;
   Close[10] = 85;
+  myServos[10].attach(10);
  
   Throw[11] = 105;
   Close[11] = 85;
-
+  myServos[11].attach(11);
+  
   Throw[12] = 80;
   Close[12] = 100;
+  myServos[12].attach(12);
   
-  Throw[13] = 105;
-  Close[13] = 85;
+// PIN 13 canno be used
  
   Throw[14] = 97; //55
-  Close[14] = 75;
-
+  Close[14] = 73;
+  myServos[14].attach(14);
+  
   Throw[15] = 108; //105
   Close[15] = 85;
+  myServos[15].attach(15);
+
+  Throw[16] = 105;
+  Close[16] = 85;
+  myServos[16].attach(16);
+   
+  Throw[17] = 105;
+  Close[17] = 85;
+  myServos[17].attach(17);
+
+  Throw[18] = 105;
+  Close[18] = 85;
+  myServos[18].attach(18);
   
-  //Throw[21] = 105;
-  //Close[21] = 85;
+  Throw[19] = 105;
+  Close[19] = 85;
+  myServos[19].attach(19);
   
+// PIN 20 cannot be used
+// PIN 21 cannot be used
+
   Throw[22] = 45;
   Close[22] = 70;
+  myServos[22].attach(22);
 
-  
   Throw[23] = 85;
   Close[23] = 105;
-
-        
+  myServos[23].attach(23);
 }
 
 void loop(){
@@ -142,14 +167,14 @@ void loop(){
    // Ensure bit address matches pin, i.e. a sensor attached to pin 17 corresponds to bit 13 (because we've skipped pins 0, 1, 2 and 13) which is address 1014 for this CMRI node
 
      // Do not read 0, 1 or 2
-//     cmri.set_bit(0, !digitalRead(24));  //Bit 0 = address 1001 in JMRI
-//     cmri.set_bit(1, !digitalRead(25));  
-//     cmri.set_bit(2, !digitalRead(26));  
-//     cmri.set_bit(3, !digitalRead(27));  
-//     cmri.set_bit(4, !digitalRead(28));  
-//     cmri.set_bit(5, !digitalRead(29));  //Bit 5 = address 1006 in JMRI
-//     cmri.set_bit(6, !digitalRead(30));  
-//     cmri.set_bit(7, !digitalRead(31));  
+     cmri.set_bit(0, !digitalRead(46));  //Bit 0 = address 1001 in JMRI
+     cmri.set_bit(1, !digitalRead(47));  
+     cmri.set_bit(2, !digitalRead(48));  
+     cmri.set_bit(3, !digitalRead(49));  
+//     cmri.set_bit(4, !digitalRead(50));  
+//     cmri.set_bit(5, !digitalRead(51));  //Bit 5 = address 1006 in JMRI
+//     cmri.set_bit(6, !digitalRead(52));  
+//     cmri.set_bit(7, !digitalRead(53));  
 //     cmri.set_bit(8, !digitalRead(32));  //Bit 9 = address 109 in JMRI
 //     cmri.set_bit(9, !digitalRead(33));  //Bit 0 = address 1001 in JMRI
 //     cmri.set_bit(10, !digitalRead(34));  
@@ -173,7 +198,16 @@ void loop(){
 //     cmri.set_bit(29, !digitalRead(52));  
 //     cmri.set_bit(30, !digitalRead(53));  //Bit 9 = address 109 in JMR
 //     
-     //etc.
-     //Do not read 13
-     //Do not read 20 or 21   
+
+ // PROCESS OUTPUTS
+    // Non servo outputs will start on bit 100, this will be address 1101 in CMRI, bit 101 will be 1102, etc.
+    // Only include lines that are required. This reduces processing time - delete or comment out lines that are not required
+    
+        digitalWrite(50, cmri.get_bit(100)); //Bit 100 = address 1100 in JMR
+        digitalWrite(51, cmri.get_bit(101));
+      //  digitalWrite(48, cmri.get_bit(102));
+      //  etc...
+      //  digitalWrite(67, cmri.get_bit(121));
+      //  digitalWrite(68, cmri.get_bit(122));
+      //  digitalWrite(69, cmri.get_bit(123));
 }
