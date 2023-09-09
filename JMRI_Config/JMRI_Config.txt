@@ -1,1 +1,2 @@
-
+This folder contains the JMRI Panels used to Run the Railroad operations including Sensors and Turnouts 
+1) Aug 2023: MyJMRI_ext-2023.xml --> JMRI Panel that contains the current Railroad Layout including the reverse Loop
