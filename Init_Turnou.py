@@ -7,7 +7,7 @@ class setStartup(jmri.jmrit.automat.AbstractAutomaton) :
       turnouts.provideTurnout("CT2").setState(CLOSED)
       self.waitMsec(1000)
       turnouts.provideTurnout("CT3").setState(CLOSED)
-      self.waitMsec(1000)         # time is in milliseconds
+      self.waitMsec(1000)
       turnouts.provideTurnout("CT4").setState(CLOSED)
       self.waitMsec(1000)
       turnouts.provideTurnout("CT5").setState(CLOSED)
@@ -26,8 +26,6 @@ class setStartup(jmri.jmrit.automat.AbstractAutomaton) :
       self.waitMsec(1000)
       turnouts.provideTurnout("CT12").setState(CLOSED)
       self.waitMsec(1000)
-      turnouts.provideTurnout("CT13").setState(CLOSED)
-      self.waitMsec(1000)
       turnouts.provideTurnout("CT14").setState(CLOSED)
       self.waitMsec(1000)
       turnouts.provideTurnout("CT15").setState(CLOSED)
@@ -40,12 +38,22 @@ class setStartup(jmri.jmrit.automat.AbstractAutomaton) :
       self.waitMsec(1000)
       turnouts.provideTurnout("CT19").setState(CLOSED)
       self.waitMsec(1000)
-      turnouts.provideTurnout("CT21").setState(CLOSED)
-      self.waitMsec(1000)
       turnouts.provideTurnout("CT22").setState(CLOSED)
       self.waitMsec(1000)
       turnouts.provideTurnout("CT23").setState(CLOSED)
-
+      self.waitMsec(1000)
+      turnouts.provideTurnout("CT29").setState(CLOSED)
+      self.waitMsec(1000)
+      turnouts.provideTurnout("CT30").setState(CLOSED)
+      self.waitMsec(1000)
+      turnouts.provideTurnout("CT31").setState(CLOSED)
+      self.waitMsec(1000)
+      turnouts.provideTurnout("CT32").setState(CLOSED)
+      self.waitMsec(1000)
+      turnouts.provideTurnout("CT33").setState(CLOSED)
+      self.waitMsec(1000)
+      turnouts.provideTurnout("CT34").setState(CLOSED)
+      self.waitMsec(1000)
       return false              # all done, don't repeat again
 
 setStartup().start()          # create one of these, and start it running 
