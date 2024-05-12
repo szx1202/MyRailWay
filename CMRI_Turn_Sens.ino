@@ -193,12 +193,13 @@ void loop(){
    // Ensure bit address matches pin, i.e. a sensor attached to pin 17 corresponds to bit 13 (because we've skipped pins 0, 1, 2 and 13) which is address 1014 for this CMRI node
 
      // Do not read 0, 1 or 2
-     cmri.set_bit(0, !digitalRead(46));  //Bit 0 = address 1001 in JMRI
-     cmri.set_bit(1, !digitalRead(47));  
-     cmri.set_bit(2, !digitalRead(48));  
-     cmri.set_bit(3, !digitalRead(49));  
-//     cmri.set_bit(4, !digitalRead(50));  
-//     cmri.set_bit(5, !digitalRead(51));  //Bit 5 = address 1006 in JMRI
+//     cmri.set_bit(0, !digitalRead(46));  //Bit 0 = address 1001 in JMRI
+//     cmri.set_bit(1, !digitalRead(47));  
+//     cmri.set_bit(2, !digitalRead(48));  
+//     cmri.set_bit(3, !digitalRead(49));  
+// Modifica test Milano
+     cmri.set_bit(4, !digitalRead(6));  //Bit 4 = address 1005 in JMRI
+     cmri.set_bit(5, !digitalRead(7));  //Bit 5 = address 1006 in JMRI
 //     cmri.set_bit(6, !digitalRead(52));  
 //     cmri.set_bit(7, !digitalRead(53));  
 //     cmri.set_bit(8, !digitalRead(32));  //Bit 9 = address 109 in JMRI
