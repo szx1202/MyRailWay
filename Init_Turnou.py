@@ -42,6 +42,8 @@ class setStartup(jmri.jmrit.automat.AbstractAutomaton) :
       self.waitMsec(1000)
       turnouts.provideTurnout("CT23").setState(CLOSED)
       self.waitMsec(1000)
+      turnouts.provideTurnout("CT24").setState(CLOSED)
+      self.waitMsec(1000)
       turnouts.provideTurnout("CT29").setState(CLOSED)
       self.waitMsec(1000)
       turnouts.provideTurnout("CT30").setState(CLOSED)
@@ -53,6 +55,8 @@ class setStartup(jmri.jmrit.automat.AbstractAutomaton) :
       turnouts.provideTurnout("CT33").setState(CLOSED)
       self.waitMsec(1000)
       turnouts.provideTurnout("CT34").setState(CLOSED)
+      self.waitMsec(1000)
+      turnouts.provideTurnout("CT35").setState(CLOSED)
       self.waitMsec(1000)
       return false              # all done, don't repeat again
 
